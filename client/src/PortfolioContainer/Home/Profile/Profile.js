@@ -108,7 +108,7 @@ export default function Profile() {
                 >Contactame
               </Link> 
             </button>
-            <a href='cristiancv.pdf' download='Cristian cuevascv.pdf'>
+            <a href='cristiancv.pdf' download='CristianCuevascv.pdf'>
               <button className='btn highlighted-btn'>Obtener Curriculum</button>
             </a>
           </div>
