@@ -1,0 +1,44 @@
+import './Footer.css';
+import { useState, useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+
+export default function Footer () {
+    // framer motion
+    const boxVariants = {
+        // move from right to left
+        visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
+        hidden: { x: 100, opacity: 0 }
+    };
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, inView]);
+
+    return (
+        <div className='footer-container'>
+            <div className='footer-backgroundTheme'>
+                <div className='footer-row'>
+                    <motion.div className='footer-col'
+                        ref={ref}
+                        animate={controls}
+                        initial="hidden"
+                        variants={boxVariants}
+                        >
+                        <h6>Contactame en otras redes sociales</h6>
+                        <div className='footer-icons'>
+                            <a className='footer-a' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+        </div>
+    );
+}

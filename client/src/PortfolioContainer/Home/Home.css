@@ -1,0 +1,37 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 670px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 1110px) {
+    .home-container {
+        min-width: 100%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .home-container {
+        min-width: 100%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .home-container {
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .home-container {
+        min-width: 100%;
+        min-height: 90vh;
+    }
+}
