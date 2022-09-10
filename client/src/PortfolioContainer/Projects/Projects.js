@@ -106,7 +106,7 @@ export default function Projects() {
                 })}
             </motion.div>
             {popuptogle && (
-                <div className='pop_up_container' onClick={changecontent}>
+            <div className='pop_up_container' onClick={changecontent}>
                 <div className='pop_up_body' onClick={(e) => e.stopPropagation()}>
                     <div className='pop_up_content'>
                         {popupcontent.map((proj) => {

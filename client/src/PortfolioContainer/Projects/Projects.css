@@ -207,10 +207,30 @@ h1 {
 
 
 @media screen and (max-width: 1241px) {
+    .pop_up_card_image {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .pop_up_header {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .pop_up_body {
+        margin: 0px 10%;
+        border-radius: 20px;
+    }
+    .pop_up_container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .img-popup {
+        min-height: 300px;
+        max-height: 200px;
+        border-radius: 0px;
+    }
+    .pop_up_title {
+        margin: 0 38px;
+        font-size: 1.2rem;  
     }
 }
 
@@ -230,27 +250,6 @@ h1 {
     .card-stats {
         border-radius: 0 0 20px 20px ;
     }
-    /* PopUp */
-    .pop_up_card_image {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .pop_up_title {
-        font-size: 1.2rem;  
-
-    }
-    .img-popup {
-        min-height: 300px;
-        max-height: 300px;
-        border-radius: 0px;
-    }
-    .pop_up_body {
-        /* min */
-        min-width: 300px;
-        /* max */
-        max-width: 100%;
-        margin: 0px 130px;
-        border-radius: 20px;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -265,19 +264,18 @@ h1 {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .pop_up_body {
+        margin: 0px 7%;
+    }
 }
 
 @media screen and (max-width: 654px) {
-    .pop_up_container {
-        padding-left: 130px;
-        padding-right: 130px;
-    }
-    .pop_up_body {
-        margin: 0;
-    }
     .pop_up_title {
         margin-right: 48px;
         margin-left: 10px;
+    }
+    .pop_up_body {
+        margin: 0px 0%;
     }
 }
 
@@ -287,15 +285,6 @@ h1 {
         padding-bottom: 10px;
         padding-left: 0px;
         padding-right: 0px;
-    }
-    
-}
-
-@media screen and (max-width: 558px) {
-    .pop_up_container {
-        padding-top: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
     
