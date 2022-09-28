@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
-import './Profile.css'
 import { Link } from 'react-scroll'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import './Profile.css'
 
 export default function Profile() {
 

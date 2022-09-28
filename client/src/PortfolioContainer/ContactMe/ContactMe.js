@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import emailjs from '@emailjs/browser';
-import './ContactMe.css';
+import React, { useState, useEffect } from "react"
+import emailjs from '@emailjs/browser'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import floatingAstronaut from '../../assets/ContactMe/Floating-Astronaut.webp'
+import './ContactMe.css'
 
 export default function ContactMe () {
     const formInitialDetails = {
@@ -72,7 +73,10 @@ export default function ContactMe () {
                 {/* <div className="square" style={{'--i':4}}></div> */}
                 <div className='contact-me-row'>
                     <div className='contact-me-column'>
-                        <img className='contact-me-image' src='https://www.pngmart.com/files/15/Floating-Astronaut-PNG-Picture.png' alt='Contactame por Correo' lazy='loading' />
+                        <img className='contact-me-image'
+                            src={floatingAstronaut}
+                            alt='Contactame por Correo'
+                            lazy='loading' />
                     </div>
                     <div className='contact-me-column'>
                         <form className="contactme-form" onSubmit={sendEmail}>
