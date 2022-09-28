@@ -114,8 +114,8 @@
 
 .blur.uno {
     background: #C1F5FF;
-    top: 20rem;
-    left: 94rem;
+    top: 35%;
+    left: 65%;
     width: 21rem;
     height: 11rem;
 }
@@ -131,7 +131,8 @@
 .blur.tres {
     background: #C1F5FF;
     top: 37rem;
-    left: 48rem;
+    /* left: 48rem; */
+    left: 41%;
     width: 21rem;
     height: 11rem;
 }

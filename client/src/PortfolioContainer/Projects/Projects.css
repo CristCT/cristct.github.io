@@ -117,7 +117,6 @@ h1 {
 }
 
 /* PopUp */
-
 .pop_up_card_image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

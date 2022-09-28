@@ -20,6 +20,7 @@ export const lightTheme = {
     fontColorCard: '#000',
     // contact
     contactBackground: '#0099FF',
+    contactInitBackground: '#0099FF',
     // footer
     footerBackgroundTheme: '#0099FF',
     footerBackground: '#0055ff',
@@ -53,6 +54,8 @@ export const darkTheme = {
     projectBackground: '#000B76',
     // fontColorProjectsTitle: '#fff',
     fontColorCard: '#000',
+    // contact
+    contactInitBackground: '#000B76',
     // footer
     footerBackgroundTheme: '#000B76',
     footerBackground: '#000000',
@@ -146,6 +149,9 @@ export const GlobalStyles = createGlobalStyle`
     /* contact */
     .contact-me-container {
         background: ${props => props.theme.contactBackground};
+    }
+    .boxInit {
+        background-color: ${props => props.theme.contactInitBackground};
     }
     /* Footer */
     .footer-backgroundTheme {

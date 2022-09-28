@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import './ContactMe.css';
-import { m, motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-
 
 export default function ContactMe () {
     const formInitialDetails = {
@@ -40,14 +39,10 @@ export default function ContactMe () {
     }
 
     // framer motion
-    const boxVariants = {
-        visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } },
-        hidden: { opacity: 0, scale: 0 }
-    };
     const boxVariants2 = {
         // move from left to right
         visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
-        hidden: { x: -100, opacity: 0 }
+        hidden: { x: -100, opacity: 1 }
     };
     const controls = useAnimation();
     const controls2 = useAnimation();
@@ -77,7 +72,7 @@ export default function ContactMe () {
                 {/* <div className="square" style={{'--i':4}}></div> */}
                 <div className='contact-me-row'>
                     <div className='contact-me-column'>
-                        <img className='contact-me-image' src='https://www.pngmart.com/files/15/Floating-Astronaut-PNG-Picture.png' alt='Contactame por Correo' />
+                        <img className='contact-me-image' src='https://www.pngmart.com/files/15/Floating-Astronaut-PNG-Picture.png' alt='Contactame por Correo' lazy='loading' />
                     </div>
                     <div className='contact-me-column'>
                         <form className="contactme-form" onSubmit={sendEmail}>

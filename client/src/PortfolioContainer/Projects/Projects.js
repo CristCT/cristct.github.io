@@ -7,8 +7,6 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Projects.css'
 
-
-
 export default function Projects() {
     const [popupcontent, setPopupcontent] = useState([]);
     const [popuptogle, setPopuptoggle] = useState(false);
@@ -39,7 +37,6 @@ export default function Projects() {
             controlsTitle.start("hidden");
         }
     }, [controlsTitle, inView]);
-    
 
     return (
         <div className="projects-container" id='Proyectos'>
@@ -60,13 +57,13 @@ export default function Projects() {
                 >
                 {ProjectsData.map((project) => {
                     return (
-                        <div className={'content-card '+project.card}>
+                        <div className={'content-card '+project.card} key={project.name}>
                             <Tilt className='tilt-card' options={{ max: 25 }} glareBorderRadius="20px">
                                 <div className="project-card">
                                     <Carousel stopOnHover={true} infiniteLoop={true} autoPlay={true} interval={5000} showThumbs= {false} showStatus= {false}>
                                         {project.images.map((image) => {
                                             return (
-                                                <div className='content-card-image'>
+                                                <div className='content-card-image' key={project.name}>
                                                     <img className='card-img' src={image} alt={image} />
                                                 </div>
                                             )})}
