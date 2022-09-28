@@ -14,8 +14,7 @@ class NavBar extends Component {
       <nav className='nav-bar-container' id='Inicio'>
         <div className='menu-left'>
           <div className='menu-title'>
-          {/* <h1 className='nav-bar-logo'>React<i className='fab fa-react'></i></h1> */}
-            <h1 className='nav-bar-logo'>React</h1>
+            <h1 className='nav-bar-logo'>Porfolio</h1>
           </div>
           <div className='nav-toggle'>
             <Toggle theme={this.props.theme} setTheme={this.props.setTheme} />

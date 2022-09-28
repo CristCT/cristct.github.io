@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer"
 import floatingAstronaut from '../../assets/ContactMe/Floating-Astronaut.webp'
 import './ContactMe.css'
 
+// popup sending email
+
 export default function ContactMe () {
     const formInitialDetails = {
         name: '',
@@ -40,7 +42,7 @@ export default function ContactMe () {
     }
 
     // framer motion
-    const boxVariants2 = {
+    const boxVariants = {
         // move from left to right
         visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
         hidden: { x: -100, opacity: 1 }
@@ -64,7 +66,7 @@ export default function ContactMe () {
                 ref={ref}
                 animate={controls2}
                 initial="hidden"
-                variants={boxVariants2}
+                variants={boxVariants}
                 >
                 <div className="square" style={{'--i':0}}></div>
                 <div className="square" style={{'--i':1}}></div>
@@ -84,13 +86,10 @@ export default function ContactMe () {
                             <div className="contactme-input-container">
                                 <label className="label-Contactme-Form">Nombre</label>
                                 <input className="input-Contactme-Form" type="text" name="name" value={formDetails.name} onChange={onFormUpdate} required />
-                                {/* <input className="input-Contactme-Form" type="text" name="name" onChange={(e) => onFormUpdate('name', e.target.value)} required /> */}
                                 <label className="label-Contactme-Form">Email</label>
                                 <input className="input-Contactme-Form" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
-                                {/* <input className="input-Contactme-Form" type="email" name="email" onChange={(e) => onFormUpdate('email', e.target.value)} required /> */}
                                 <label className="label-Contactme-Form">Mensaje</label>
                                 <textarea className="input-Contactme-Form textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
-                                {/* <textarea className="input-Contactme-Form" name="message" onChange={(e) => onFormUpdate('message', e.target.value)} required /> */}
                                 <button className="glow-on-hover" type="submit">{buttonText}</button>
                                 {status.message && <p className={status.success === true ? "danger" : "success"}>{status.message}</p>}
                             </div>
