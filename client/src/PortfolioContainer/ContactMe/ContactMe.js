@@ -44,8 +44,8 @@ export default function ContactMe () {
     // framer motion
     const boxVariants = {
         // move from left to right
-        visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
-        hidden: { x: -100, opacity: 1 }
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+        hidden: { x: -500, opacity: 1 }
     };
     const controls = useAnimation();
     const controls2 = useAnimation();

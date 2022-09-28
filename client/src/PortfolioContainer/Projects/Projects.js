@@ -26,7 +26,7 @@ export default function Projects() {
     const boxVariants = {
         // move from right to left
         visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
-        hidden: { x: 100, opacity: 0, transition: { duration: 2, ease: "easeInOut" } }
+        hidden: { x: 200, opacity: 0, transition: { duration: 1} }
     };
     const controlsTitle = useAnimation();
     const [ref, inView] = useInView();
