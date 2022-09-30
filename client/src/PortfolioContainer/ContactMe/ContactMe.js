@@ -45,7 +45,7 @@ export default function ContactMe () {
     const boxVariants = {
         // move from left to right
         visible: { x: 0, opacity: 1, transition: { duration: 1 } },
-        hidden: { x: -500, opacity: 1 }
+        hidden: { x: -300, opacity: 1 }
     };
     const controls = useAnimation();
     const controls2 = useAnimation();
