@@ -49,14 +49,14 @@ export default function Modal({closePopup, statusMessage}) {
         <div className="title">
         {statusMessage === "Enviado" ?(
           // Menssage Sent
-          <h2>{statusMessage}
-            <img style={{width: "40px", height: "10%"}} src={sendGif} alt="send"/>
-          </h2>
+          <h4>Mensaje<br></br>Enviado<br></br>
+            <img style={{width: "50px"}} src={sendGif} alt="send"/>
+          </h4>
           ) : (
             // Menssage Error
-            <h2>{statusMessage}
-              <img style={{width: "40px", height: "10%"}} src={errorGif} alt=""/>
-            </h2> 
+            <h4>Error al<br></br>enviar<br></br>
+              <img style={{width: "50px"}} src={errorGif} alt=""/>
+            </h4> 
             )}
         </div>
       </motion.div>
