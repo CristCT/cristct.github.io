@@ -3,11 +3,13 @@ import emailjs from '@emailjs/browser'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import floatingAstronaut from '../../assets/ContactMe/Floating-Astronaut.webp'
+import Modal from "./Modal"
 import './ContactMe.css'
 
 // popup sending email
 
 export default function ContactMe () {
+    const [openPopup, setOpenPopup] = useState(false);
     const formInitialDetails = {
         name: '',
         email: '',
@@ -24,7 +26,6 @@ export default function ContactMe () {
             [e.target.name]: e.target.value
         })
     }
-
     const sendEmail = (e) => {
         e.preventDefault();
         setButtonText('Enviando...');
@@ -35,9 +36,11 @@ export default function ContactMe () {
                 setStatus('Enviado');
                 setButtonText('Enviar');
                 setFormDetails(formInitialDetails);
+                setOpenPopup(true)
             }, (error) => {
                 setStatus('Error');
                 setButtonText('Enviar');
+                setOpenPopup(true)
             });
     }
 
@@ -48,23 +51,20 @@ export default function ContactMe () {
         hidden: { x: -300, opacity: 1 }
     };
     const controls = useAnimation();
-    const controls2 = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
         if (inView) {
             controls.start("visible");
-            controls2.start("visible");
         } else {
             controls.start("hidden");
-            controls2.start("hidden");
         }
-    }, [controls, controls2, inView]);
+    }, [controls, inView]);
     
     return (
         <div className='contact-me-container' id='Contactame'>
             <motion.div className='box'
                 ref={ref}
-                animate={controls2}
+                animate={controls}
                 initial="hidden"
                 variants={boxVariants}
                 >
@@ -72,7 +72,6 @@ export default function ContactMe () {
                 <div className="square" style={{'--i':1}}></div>
                 <div className="square" style={{'--i':2}}></div>
                 <div className="square" style={{'--i':3}}></div>
-                {/* <div className="square" style={{'--i':4}}></div> */}
                 <div className='contact-me-row'>
                     <div className='contact-me-column'>
                         <img className='contact-me-image'
@@ -90,8 +89,14 @@ export default function ContactMe () {
                                 <input className="input-Contactme-Form" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
                                 <label className="label-Contactme-Form">Mensaje</label>
                                 <textarea className="input-Contactme-Form textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
-                                <button className="glow-on-hover" type="submit">{buttonText}</button>
-                                {status.message && <p className={status.success === true ? "danger" : "success"}>{status.message}</p>}
+                                <button
+                                    className="glow-on-hover"
+                                    type="submit"
+                                    disabled={buttonText === 'Enviando...' ? true : false}
+                                    onClick={() => {setStatus('');}} // clean status message
+                                    >{buttonText}
+                                </button>
+                                {openPopup && <Modal closePopup={setOpenPopup} statusMessage={status} />}
                             </div>
                         </form>
                     </div>    
