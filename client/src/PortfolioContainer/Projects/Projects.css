@@ -139,6 +139,8 @@ h1 {
     background-color: white;
     margin: 0px 190px;
     border-radius: 20px 20px 0 0;
+    overflow-y: scroll;
+
 }
 
 .pop_up_header {

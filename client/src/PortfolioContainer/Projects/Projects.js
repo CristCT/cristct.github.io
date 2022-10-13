@@ -7,20 +7,24 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Projects.css'
 
+// pasar project a componente PaginaNueva.js
+import PaginaNueva from './PaginaNueva';
+
 export default function Projects() {
+    // PaginaNueva
+    const [project, setProject] = useState(null);
+    const [showProject, setShowProject] = useState(false);
+
     const [popupcontent, setPopupcontent] = useState([]);
     const [popuptogle, setPopuptoggle] = useState(false);
-    const [styling, setStyling] = useState(null);
     const changecontent = (project) => {
         setPopupcontent([project]);
         setPopuptoggle(!popuptogle);
-        if (styling === null) {
-            setStyling({
-                // position: 'fixed',
-                // document.body.style.overflow = 'hidden',
-                // document.body.style.overflowY = 'hidden',
-            });
-        } else{setStyling(null)}
+        hiddenScroll();
+    };
+    const hiddenScroll = () => {
+        if (popuptogle) {document.body.style.overflow = 'unset';}
+        else {document.body.style.overflow = "hidden";}
     };
     // Framer Motion
     const boxVariants = {
@@ -37,6 +41,7 @@ export default function Projects() {
             controlsTitle.start("hidden");
         }
     }, [controlsTitle, inView]);
+    
 
     return (
         <div className="projects-container" id='Proyectos'>
@@ -49,7 +54,7 @@ export default function Projects() {
                 >
                 <h1 className='projects-title'>PROYECTOS</h1>
             </motion.div>
-            <motion.div className="content-container" style={styling}
+            <motion.div className="content-container"
                 ref={ref}
                 animate={controlsTitle}
                 initial="hidden"
@@ -111,7 +116,7 @@ export default function Projects() {
                                 <div className='pop_up_card'>
                                     <div className='pop_up_header'>
                                         <h1 className='pop_up_title'>{proj.name}</h1>
-                                        <button className='pop_up_button' onClick={() =>{setPopuptoggle(false);}}>x</button>
+                                        <button className='pop_up_button' onClick={() =>{setPopuptoggle(false); hiddenScroll();}}>X</button>
                                     </div>
                                     <Carousel showThumbs={false} showStatus={false}>
                                     {/* image [0] with description [0], after image[1] with description[1]... */}
