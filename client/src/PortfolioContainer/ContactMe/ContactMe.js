@@ -6,8 +6,6 @@ import floatingAstronaut from '../../assets/ContactMe/Floating-Astronaut.webp'
 import Modal from "./Modal"
 import './ContactMe.css'
 
-// popup sending email
-
 export default function ContactMe () {
     const [openPopup, setOpenPopup] = useState(false);
     const formInitialDetails = {
@@ -15,7 +13,6 @@ export default function ContactMe () {
         email: '',
         message: ''
     }
-
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Enviar');
     const [status, setStatus] = useState('');
@@ -47,8 +44,8 @@ export default function ContactMe () {
     // framer motion
     const boxVariants = {
         // move from left to right
-        visible: { x: 0, opacity: 1, transition: { duration: 1 } },
-        hidden: { x: -300, opacity: 1 }
+        hidden: { x: "-50%", opacity: 1 },
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
     };
     const controls = useAnimation();
     const [ref, inView] = useInView();
@@ -64,42 +61,38 @@ export default function ContactMe () {
         <div className='contact-me-container' id='Contactame'>
             <motion.div className='box'
                 ref={ref}
-                animate={controls}
-                initial="hidden"
                 variants={boxVariants}
+                initial="hidden"
+                animate={controls}
                 >
                 <div className="square" style={{'--i':0}}></div>
                 <div className="square" style={{'--i':1}}></div>
                 <div className="square" style={{'--i':2}}></div>
                 <div className="square" style={{'--i':3}}></div>
-                <div className='contact-me-row'>
-                    <div className='contact-me-column'>
-                        <img className='contact-me-image'
-                            src={floatingAstronaut}
-                            alt='Contactame por Correo'
-                            lazy='loading' />
+                {/* use grid for image and form */}
+                <div className="contact-me-grid">
+                    <div className="contact-me-image">
+                        <img className="imageclass" src={floatingAstronaut} alt="floating astronaut" />
                     </div>
-                    <div className='contact-me-column'>
-                        <form className="contactme-form" onSubmit={sendEmail}>
-                            <div className="contactme-text"><h1 className="contactme-title">Contactame</h1></div>
-                            <div className="contactme-input-container">
-                                <label className="label-Contactme-Form">Nombre</label>
-                                <input className="input-Contactme-Form" type="text" name="name" value={formDetails.name} onChange={onFormUpdate} required />
-                                <label className="label-Contactme-Form">Email</label>
-                                <input className="input-Contactme-Form" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
-                                <label className="label-Contactme-Form">Mensaje</label>
-                                <textarea className="input-Contactme-Form textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
-                                <button
-                                    className="glow-on-hover"
-                                    type="submit"
-                                    disabled={buttonText === 'Enviando...' ? true : false}
-                                    onClick={() => {setStatus('');}} // clean status message
-                                    >{buttonText}
-                                </button>
-                                {openPopup && <Modal closePopup={setOpenPopup} statusMessage={status} />}
-                            </div>
+                    <div className="contact-me-form">
+                        <div className="contact-me-text"><h1 className="contactme-title">Contactame</h1></div>
+                        <form onSubmit={sendEmail}>
+                            <label className="label-Contactme-Form">Nombre</label>
+                            <input className="input-Contactme-Form" type="text" name="name" value={formDetails.name} onChange={onFormUpdate} required />
+                            <label className="label-Contactme-Form">Email</label>
+                            <input className="input-Contactme-Form" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
+                            <label className="label-Contactme-Form">Mensaje</label>
+                            <textarea className="input-Contactme-Form textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
+                            <button
+                                className="glow-on-hover"
+                                type="submit"
+                                disabled={buttonText === 'Enviando...' ? true : false}
+                                onClick={() => {setStatus('');}} // clean status message
+                                >{buttonText}
+                            </button>
+                            {openPopup && <Modal closePopup={setOpenPopup} statusMessage={status} />}
                         </form>
-                    </div>    
+                    </div>
                 </div>
             </motion.div>
         </div>

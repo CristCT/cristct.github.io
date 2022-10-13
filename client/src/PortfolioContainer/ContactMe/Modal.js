@@ -17,18 +17,18 @@ export default function Modal({closePopup, statusMessage}) {
     visible: { opacity: 1, transition: { duration: 0.6 } },
     hidden: { opacity: 0 }
   };
-  const controls = useAnimation();
+  const controlsIncrease = useAnimation();
   const controlsFade = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
       if (inView) {
-          controls.start("visible");
+          controlsIncrease.start("visible");
           controlsFade.start("visible");
       } else {
-          controls.start("hidden");
+          controlsIncrease.start("hidden");
           controlsFade.start("hidden");
       }
-  }, [controls, controlsFade, inView]);
+  }, [controlsIncrease, controlsFade, inView]);
 
   return (
     <motion.div className="modalBackground"
@@ -39,7 +39,7 @@ export default function Modal({closePopup, statusMessage}) {
       >
       <motion.div className="modalContainer"
       ref={ref}
-      animate={controls}
+      animate={controlsIncrease}
       initial="hidden"
       variants={boxIncrease}
       >
@@ -52,7 +52,7 @@ export default function Modal({closePopup, statusMessage}) {
           <h4>Mensaje<br></br>Enviado<br></br>
             <img style={{width: "50px"}} src={sendGif} alt="send"/>
           </h4>
-          ) : (
+          ) : ( 
             // Menssage Error
             <h4>Error al<br></br>enviar<br></br>
               <img style={{width: "50px"}} src={errorGif} alt=""/>
