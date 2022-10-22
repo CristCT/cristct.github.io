@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer"
 import './Profile.css'
 
 export default function Profile() {
-
   const boxVariants = {
     // move from left to right
     visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
@@ -69,7 +68,6 @@ export default function Profile() {
               </a>
             </div>
           </div>
-
           <div className='profile-details-name'>
             <span className='primary-text'>
               {" "}

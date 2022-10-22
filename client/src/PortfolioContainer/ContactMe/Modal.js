@@ -38,11 +38,11 @@ export default function Modal({closePopup, statusMessage}) {
       variants={boxFade}
       >
       <motion.div className="modalContainer"
-      ref={ref}
-      animate={controlsIncrease}
-      initial="hidden"
-      variants={boxIncrease}
-      >
+        ref={ref}
+        animate={controlsIncrease}
+        initial="hidden"
+        variants={boxIncrease}
+        >
         <div className="titleCloseBtn">
           <button onClick={() => closePopup(false)}>X</button>
         </div>

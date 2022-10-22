@@ -1,31 +1,30 @@
 import { useState, useEffect } from 'react';
 import { ProjectsData } from './Data';
-import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation, AnimatePresence } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Tilt from 'react-parallax-tilt';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import PopUp from './PopUp';
 import './Projects.css'
 
-// pasar project a componente PaginaNueva.js
-import PaginaNueva from './PaginaNueva';
-
 export default function Projects() {
-    // PaginaNueva
-    const [project, setProject] = useState(null);
-    const [showProject, setShowProject] = useState(false);
-
+    // PopUp
+    const [openproject, setOpenPopup] = useState(false);
     const [popupcontent, setPopupcontent] = useState([]);
     const [popuptogle, setPopuptoggle] = useState(false);
     const changecontent = (project) => {
         setPopupcontent([project]);
         setPopuptoggle(!popuptogle);
-        hiddenScroll();
+        disableScroll();
+        setOpenPopup(true);
     };
-    const hiddenScroll = () => {
-        if (popuptogle) {document.body.style.overflow = 'unset';}
-        else {document.body.style.overflow = "hidden";}
-    };
+    // ScrollBar
+    const disableScroll = () => {  
+        var x = window.scrollX;
+        var y = window.scrollY;
+        window.onscroll = function(){ window.scrollTo(x, y) };
+    }
     // Framer Motion
     const boxVariants = {
         // move from right to left
@@ -41,7 +40,6 @@ export default function Projects() {
             controlsTitle.start("hidden");
         }
     }, [controlsTitle, inView]);
-    
 
     return (
         <div className="projects-container" id='Proyectos'>
@@ -62,16 +60,17 @@ export default function Projects() {
                 >
                 {ProjectsData.map((project) => {
                     return (
-                        <div className={'content-card '+project.card} key={project.name}>
+                        <div className={'content-card ' + project.card} key={project.name}>
                             <Tilt className='tilt-card' options={{ max: 25 }} glareBorderRadius="20px">
                                 <div className="project-card">
-                                    <Carousel stopOnHover={true} infiniteLoop={true} autoPlay={true} interval={5000} showThumbs= {false} showStatus= {false}>
+                                    <Carousel stopOnHover={true} infiniteLoop={true} autoPlay={true} interval={5000} showThumbs={false} showStatus={false}>
                                         {project.images.map((image) => {
                                             return (
                                                 <div className='content-card-image' key={project.name}>
                                                     <img className='card-img' src={image} alt={image} />
                                                 </div>
-                                            )})}
+                                            );
+                                        })}
                                     </Carousel>
                                     <div className={'card-style'}>
                                         <div>
@@ -82,7 +81,8 @@ export default function Projects() {
                                                     whileHover={{ scale: 1.1 }}
                                                     whileTap={{ scale: 0.9 }}
                                                     className='read-more' onClick={() => {
-                                                        changecontent(project);}}> Leer Más.
+                                                        changecontent(project);
+                                                    } }> Leer Más.
                                                 </motion.span>
                                             </p>
                                             <div className='card-stats'>
@@ -107,34 +107,10 @@ export default function Projects() {
                     );
                 })}
             </motion.div>
-            {popuptogle && (
-            <div className='pop_up_container' onClick={changecontent}>
-                <div className='pop_up_body' onClick={(e) => e.stopPropagation()}>
-                    <div className='pop_up_content'>
-                        {popupcontent.map((proj) => {
-                            return (
-                                <div className='pop_up_card'>
-                                    <div className='pop_up_header'>
-                                        <h1 className='pop_up_title'>{proj.name}</h1>
-                                        <button className='pop_up_button' onClick={() =>{setPopuptoggle(false); hiddenScroll();}}>X</button>
-                                    </div>
-                                    <Carousel showThumbs={false} showStatus={false}>
-                                    {/* image [0] with description [0], after image[1] with description[1]... */}
-                                        {proj.images.map((image, index) => {
-                                            return (
-                                                <div className='pop_up_card_image'>
-                                                    <img className='img-popup' src={image} alt={image} />
-                                                    <p className='pop_up_description'>{proj.description[index]}</p>
-                                                </div>
-                                            )})}
-                                    </Carousel>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </div>
-            )}
+            {/* PopUp */}
+            <AnimatePresence>
+                {openproject && <PopUp closePopup={setOpenPopup} project={popupcontent} />}
+            </AnimatePresence>
         </div>
     )
 }

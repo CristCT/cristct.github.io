@@ -38,9 +38,12 @@ h1 {
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    /* max-width: 173px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* cubrir todo el espacio */
+    object-fit: cover;
 }
 
 .card-style {
@@ -140,7 +143,6 @@ h1 {
     margin: 0px 190px;
     border-radius: 20px 20px 0 0;
     overflow-y: scroll;
-
 }
 
 .pop_up_header {

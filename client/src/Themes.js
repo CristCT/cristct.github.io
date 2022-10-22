@@ -18,6 +18,10 @@ export const lightTheme = {
     borderRadius: '20px',
     fontColorProjectsTitle: '#fff',
     fontColorCard: '#000',
+    // popup project
+    popupBackground: '#fff',
+    popupFontTitleColor: '#fff',
+    popupFontDescriptionColor: '#000',
     // contact
     contactBackground: '#0099FF',
     contactInitBackground: '#0099FF',
@@ -54,6 +58,10 @@ export const darkTheme = {
     projectBackground: '#000B76',
     // fontColorProjectsTitle: '#fff',
     fontColorCard: '#000',
+    // popup project
+    popupBackground: '#171924',
+    popupFontTitleColor: '#fff',
+    popupFontDescriptionColor: '#fff',
     // contact
     contactInitBackground: '#000B76',
     // footer
@@ -75,19 +83,12 @@ export const darkTheme = {
 }
 
 export const GlobalStyles = createGlobalStyle`
-    body {
-        background: ${props => props.theme.background};
-    }
+    body {background: ${props => props.theme.background};}
     /* NavBar */
-    .nav-bar-container {
-        background: ${props => props.theme.navbarBackground};
-    }
-    .nav-bar-logo {
-        color: ${props => props.theme.fontColorHome};
-    }
+    .nav-bar-container {background: ${props => props.theme.navbarBackground};}
+    .nav-bar-logo {color: ${props => props.theme.fontColorHome};}
     .nav-links {
         color: ${props => props.theme.navbarFontColor};
-        /* if screen 493 x 845 change color */
         @media (max-width: 810px) {
             color: ${props => props.theme.navbarFontColorMobile};
             /* .fa-times, .fas.fa-bars {
@@ -95,9 +96,7 @@ export const GlobalStyles = createGlobalStyle`
             } */
         }
     }
-    .nav-links:hover {
-        background-color: ${props => props.theme.navbarHover};
-    }
+    .nav-links:hover {background-color: ${props => props.theme.navbarHover};}
     .nav-menu.active {
         /* if the screen is smaller than 810 */
         @media (max-width: 810px) {
@@ -107,22 +106,12 @@ export const GlobalStyles = createGlobalStyle`
         @media (min-width: 810px) {
         }
     }
-    .fa-times, .fas.fa-bars {
-        color: ${props => props.theme.navbarIconMobile};
-    }
+    .fa-times, .fas.fa-bars {color: ${props => props.theme.navbarIconMobile};}
     /* Home */
-    .home-container {
-        background: ${props => props.theme.homeBackground};
-    }
-    .primary-text {
-        color: ${props => props.theme.fontColorHome};
-    }
-    .btn.primary-btn {
-        color: ${props => props.theme.fontColorHome};
-    }
-    .btn.highlighted-btn {
-        color: ${props => props.theme.fontColorHome};
-    }
+    .home-container {background: ${props => props.theme.homeBackground};}
+    .primary-text {color: ${props => props.theme.fontColorHome};}
+    .btn.primary-btn {color: ${props => props.theme.fontColorHome};}
+    .btn.highlighted-btn {color: ${props => props.theme.fontColorHome};}
     /* Profile */
     .blur.uno, .blur.tres {
         background: ${props => props.theme.blurProfileTra};
@@ -133,19 +122,18 @@ export const GlobalStyles = createGlobalStyle`
         display: ${props => props.theme.blurDisplay};
     }
     /* projects */
-    .projects-container {
-        background: ${props => props.theme.projectBackground};
-    }
-    .projects-title {
-        color: ${props => props.theme.fontColorProjectsTitle};
-    }
-    .content-container {
-        color: ${props => props.theme.fontColorCard};
-    }
+    .projects-container {background: ${props => props.theme.projectBackground};}
+    .projects-title {color: ${props => props.theme.fontColorProjectsTitle};}
+    .content-container {color: ${props => props.theme.fontColorCard};}
     .tilt-card {
         border: ${props => props.theme.border}px solid ${props => props.theme.fontColorCard};
         border-radius: ${props => props.theme.borderRadius};
     }
+    /* popup Project */
+    .popup__container {background: ${props => props.theme.popupBackground};}
+    .popup__content {background: ${props => props.theme.popupBackground};}
+    .popup__content__info {color: ${props => props.theme.popupFontDescriptionColor};}
+    .popup__content__info__header__title {color: ${props => props.theme.popupFontTitleColor};}
     /* contact */
     .contact-me-container {
         background: ${props => props.theme.contactBackground};
