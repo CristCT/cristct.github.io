@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/porfolio/static/css/main.42b340ed.css",
-    "main.js": "/porfolio/static/js/main.8be30446.js",
+    "main.css": "/porfolio/static/css/main.7e2f99c4.css",
+    "main.js": "/porfolio/static/js/main.c3cda19e.js",
     "static/js/787.c4e7f8f9.chunk.js": "/porfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/portadaGameMania.png": "/porfolio/static/media/portadaGameMania.9377e682e53faac52d06.png",
+    "static/media/portada0.png": "/porfolio/static/media/portada0.5c796fcfd3209d6fa2ca.png",
     "static/media/sendMessage.gif": "/porfolio/static/media/sendMessage.54d85cc30f0fbf24a587.gif",
+    "static/media/portada.png": "/porfolio/static/media/portada.7d142a9fcf610003e143.png",
     "static/media/errorMessage.gif": "/porfolio/static/media/errorMessage.4787679e0512f0d92967.gif",
+    "static/media/secciónConsultar.png": "/porfolio/static/media/secciónConsultar.c09a190fb9cb8d7e8ebc.png",
+    "static/media/secciónRegistrar.png": "/porfolio/static/media/secciónRegistrar.c5674e437ba7455e6ba0.png",
     "static/media/profilephoto.jpg": "/porfolio/static/media/profilephoto.0943c94927d996b64d66.jpg",
     "static/media/Floating-Astronaut.webp": "/porfolio/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
+    "static/media/formularioLogin.png": "/porfolio/static/media/formularioLogin.227edf3fffde775ab848.png",
     "index.html": "/porfolio/index.html",
-    "main.42b340ed.css.map": "/porfolio/static/css/main.42b340ed.css.map",
-    "main.8be30446.js.map": "/porfolio/static/js/main.8be30446.js.map",
+    "main.7e2f99c4.css.map": "/porfolio/static/css/main.7e2f99c4.css.map",
+    "main.c3cda19e.js.map": "/porfolio/static/js/main.c3cda19e.js.map",
     "787.c4e7f8f9.chunk.js.map": "/porfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42b340ed.css",
-    "static/js/main.8be30446.js"
+    "static/css/main.7e2f99c4.css",
+    "static/js/main.c3cda19e.js"
   ]
 }
