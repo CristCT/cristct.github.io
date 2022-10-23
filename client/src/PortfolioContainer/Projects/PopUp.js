@@ -68,8 +68,10 @@ export default function PaginaNueva({project, closePopup}) {
             {project.map((project) => {
               return (
                 <section className="popup__content" key={project.card}>
-                  <div className="popup__content__img__header"
-                    style={{backgroundImage: `url(${project.images[0]})`}}>
+                  <div className="popup__content__header">
+                    <div className="popup__content__header__img"
+                      style={{backgroundImage: `url(${project.images[0]})`}}>
+                    </div>
                   </div>
                   <div className="popup__content__info__header">
                     <h1 className="popup__content__info__header__title">{project.name.toUpperCase()}</h1>
