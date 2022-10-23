@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/porfolio/static/css/main.7e2f99c4.css",
-    "main.js": "/porfolio/static/js/main.c3cda19e.js",
+    "main.css": "/porfolio/static/css/main.f2f4e4e1.css",
+    "main.js": "/porfolio/static/js/main.01c3b0fc.js",
     "static/js/787.c4e7f8f9.chunk.js": "/porfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/portadaGameMania.png": "/porfolio/static/media/portadaGameMania.9377e682e53faac52d06.png",
     "static/media/portada0.png": "/porfolio/static/media/portada0.5c796fcfd3209d6fa2ca.png",
@@ -14,12 +14,12 @@
     "static/media/Floating-Astronaut.webp": "/porfolio/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
     "static/media/formularioLogin.png": "/porfolio/static/media/formularioLogin.227edf3fffde775ab848.png",
     "index.html": "/porfolio/index.html",
-    "main.7e2f99c4.css.map": "/porfolio/static/css/main.7e2f99c4.css.map",
-    "main.c3cda19e.js.map": "/porfolio/static/js/main.c3cda19e.js.map",
+    "main.f2f4e4e1.css.map": "/porfolio/static/css/main.f2f4e4e1.css.map",
+    "main.01c3b0fc.js.map": "/porfolio/static/js/main.01c3b0fc.js.map",
     "787.c4e7f8f9.chunk.js.map": "/porfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e2f99c4.css",
-    "static/js/main.c3cda19e.js"
+    "static/css/main.f2f4e4e1.css",
+    "static/js/main.01c3b0fc.js"
   ]
 }
