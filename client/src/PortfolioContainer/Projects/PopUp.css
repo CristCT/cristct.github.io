@@ -192,6 +192,9 @@
     }
 }
 @media only screen and (hover: none) and (pointer: coarse){
+    ::-webkit-scrollbar {
+        display: none;
+    }
     .popup__container{
         overflow-y: auto;
     }
