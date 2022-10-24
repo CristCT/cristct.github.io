@@ -198,6 +198,9 @@
     .popup__container{
         overflow-y: auto;
     }
+    .popup__header {
+        right: 0;
+    }
 }
 @media screen and (min-width: 1455px) {
     .popup__content__header__img {
