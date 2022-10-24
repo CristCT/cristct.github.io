@@ -178,6 +178,7 @@
         font-family: 'Poppins Regular';
         font-size: 1rem;
         text-align: start;
+        margin: 0;
         padding: 10px 20px;
     }
     .popup__content__info__text--last {
