@@ -24,6 +24,11 @@ export default function Projects() {
         var x = window.scrollX;
         var y = window.scrollY;
         window.onscroll = function(){ window.scrollTo(x, y) };
+        // time to wait before scroll is hidden
+        var time = 800;
+        setTimeout(function(){
+            document.body.style.overflowY = 'hidden';
+        }, time);
     }
     // Framer Motion
     const boxVariants = {

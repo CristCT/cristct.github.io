@@ -6,6 +6,7 @@ import './PopUp.css'
 export default function PaginaNueva({project, closePopup}) {
   const enableScroll = () => {  
     window.onscroll = null;
+    document.body.style.overflowY = 'scroll';
   }
   // framer motion
   const boxSlide = {
