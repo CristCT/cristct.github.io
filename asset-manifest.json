@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/porfolio/static/css/main.6e40f6fa.css",
-    "main.js": "/porfolio/static/js/main.86868ebd.js",
+    "main.js": "/porfolio/static/js/main.82327844.js",
     "static/js/787.c4e7f8f9.chunk.js": "/porfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/EnDesarrollo2.png": "/porfolio/static/media/EnDesarrollo2.254321f31a72e3f6f0d2.png",
     "static/media/sendMessage.gif": "/porfolio/static/media/sendMessage.54d85cc30f0fbf24a587.gif",
@@ -9,7 +9,7 @@
     "static/media/portada.png": "/porfolio/static/media/portada.bb08652f316113bc8fdd.png",
     "static/media/secciónConsultar.png": "/porfolio/static/media/secciónConsultar.51632bdec3b9ba4a6a2e.png",
     "static/media/portadaGameMania.png": "/porfolio/static/media/portadaGameMania.3a7de9f0fad6d67f580a.png",
-    "static/media/DashBoardEliminar.png": "/porfolio/static/media/DashBoardEliminar.221a57093c6fc482f1d2.png",
+    "static/media/DashBoardEliminar.png": "/porfolio/static/media/DashBoardEliminar.4b8bb71aa06e372b4c6e.png",
     "static/media/Personas.png": "/porfolio/static/media/Personas.5fd2a106c95a7c6e5a8f.png",
     "static/media/DashBoardEditar.png": "/porfolio/static/media/DashBoardEditar.1800f7f16d533131b989.png",
     "static/media/DashBoard.png": "/porfolio/static/media/DashBoard.464d2f2c70f13196f74a.png",
@@ -19,11 +19,11 @@
     "static/media/formularioLogin.png": "/porfolio/static/media/formularioLogin.227edf3fffde775ab848.png",
     "index.html": "/porfolio/index.html",
     "main.6e40f6fa.css.map": "/porfolio/static/css/main.6e40f6fa.css.map",
-    "main.86868ebd.js.map": "/porfolio/static/js/main.86868ebd.js.map",
+    "main.82327844.js.map": "/porfolio/static/js/main.82327844.js.map",
     "787.c4e7f8f9.chunk.js.map": "/porfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e40f6fa.css",
-    "static/js/main.86868ebd.js"
+    "static/js/main.82327844.js"
   ]
 }
