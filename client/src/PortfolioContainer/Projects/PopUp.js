@@ -68,7 +68,7 @@ export default function PaginaNueva({project, closePopup}) {
             </div>
             {project.map((project) => {
               return (
-                <section className="popup__content" key={project.card}>
+                <div className="popup__content" key={project.card}>
                   <div className="popup__content__header">
                     <div className="popup__content__header__img"
                       style={{backgroundImage: `url(${project.images[0]})`}}>
@@ -96,7 +96,7 @@ export default function PaginaNueva({project, closePopup}) {
                       <img className="popup__content__info__img popup__content__info__img--last" src={project.images[4]} alt={project.title} />
                     </div>
                   </div>
-                </section>
+                </div>
               );
             })}
           </motion.div>

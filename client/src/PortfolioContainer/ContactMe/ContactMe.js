@@ -69,7 +69,6 @@ export default function ContactMe () {
                 <div className="square" style={{'--i':1}}></div>
                 <div className="square" style={{'--i':2}}></div>
                 <div className="square" style={{'--i':3}}></div>
-                {/* use grid for image and form */}
                 <div className="contact-me-grid">
                     <div className="contact-me-image">
                         <img className="imageclass" src={floatingAstronaut} alt="floating astronaut" />
