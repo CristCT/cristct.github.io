@@ -15,8 +15,8 @@ export const ProjectsData = [
         name: "Gestor y Control de acceso",
         description: ["Muchas veces se requiere obtener datos desde apis externas, para poder realizar distintas acciones con los datos obtenidos para ello esta aplicación consta de obtener datos de una API externa, y luego usar estos datos para ser mostrados en tablas o en lo que sea que se requiera.","Descripción 2."],
         images: imagesProjectInHabitants,
-        technology: ["Api", "Java", "Windows"],
-        icons: ["fas fa-server", "fas fa-code", "fab fa-windows"],
+        technology: ["Rest", "Java", "Angular"],
+        icons: ["fas fa-server", "fas fa-code", "fab fa-angular"],
         url: "Aún No disponible"
     },
     {
