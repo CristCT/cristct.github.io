@@ -4,6 +4,25 @@ import { motion, useAnimation } from "framer-motion"
 import './PopUp.css'
 
 export default function PaginaNueva({project, closePopup}) {
+
+  // ------------------------------
+  async function query(data) {
+    const response = await fetch(
+      "https://api-inference.huggingface.co/models/sshleifer/distilbart-xsum-12-3",
+      {
+        headers: { Authorization: "Bearer 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" },
+        method: "POST",
+        body: JSON.stringify(data),
+      }
+    );
+    const result = await response.json();
+    return result;
+  }
+  query({"inputs": "En términos técnicos, Python es un lenguaje de programación de alto nivel, orientado a objetos, con una semántica dinámica y también integrada, principalmente para el desarrollo web y de aplicaciones informáticas. Es muy atractivo en el campo del Desarrollo Rápido de Aplicaciones (RAD) porque ofrece tipificación dinámica y opciones de encuadernación dinámicas. Python es relativamente simple, por lo que es fácil de aprender, ya que requiere una sintaxis única que se centra en la legibilidad. Los desarrolladores pueden leer y traducir el código Python mucho más fácilmente que otros lenguajes."}).then((response) => {
+    console.log(JSON.stringify(response));
+  });
+  // ------------------------------
+
   const enableScroll = () => {  
     window.onscroll = null;
     document.body.style.overflowY = 'scroll';

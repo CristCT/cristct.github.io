@@ -72,9 +72,54 @@ a:hover {
     color: #fff;
 }
 
+/* burger */
 .menu-icon {
     display: none;
     z-index: 1;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 5;
+}
+
+.burger-bar {
+    width: 2em;
+    height: 0.2em;
+    margin: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translateY(8px) translateX(8px);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 @media screen and (max-width: 810px) {
@@ -119,10 +164,9 @@ a:hover {
     .menu-icon {
         display: block;
         position: absolute;
-        top: 0;
+        top: 5;
         left: 90%;
-        transform: translate(-100%, 42%);
-        font-size: 1.8rem;
+        transform: translate(-100%, 50%);
         cursor: pointer;
     }
     .fa-times {

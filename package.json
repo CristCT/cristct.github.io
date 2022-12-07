@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "react-multi-carousel": "^2.8.2",
-    "reactjs-popup": "^2.0.5"
+    "reactjs-popup": "^2.0.5",
+    "text-summary": "^2.0.4"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
