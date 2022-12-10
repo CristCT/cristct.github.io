@@ -1,4 +1,4 @@
-.home-container {
+.home__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,21 +8,21 @@
 }
 
 @media screen and (max-width: 1110px) {
-    .home-container {
+    .home__container {
         min-width: 100%;
         min-height: 90vh;
     }
 }
 
 @media screen and (max-width: 910px) {
-    .home-container {
+    .home__container {
         min-width: 100%;
         min-height: 90vh;
     }
 }
 
 @media screen and (max-width: 810px) {
-    .home-container {
+    .home__container {
         flex-direction: column;
         min-width: 100%;
         min-height: 90vh;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .home-container {
+    .home__container {
         min-width: 100%;
         min-height: 90vh;
     }

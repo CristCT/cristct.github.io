@@ -21,18 +21,18 @@ export default function Footer () {
     }, [controls, inView]);
 
     return (
-        <div className='footer-container'>
-            <div className='footer-backgroundTheme'>
-                <div className='footer-row'>
-                    <motion.div className='footer-col'
+        <div className='footer__container'>
+            <div className='footer__background'>
+                <div className='footer__row'>
+                    <motion.div className='footer__col'
                         ref={ref}
                         animate={controls}
                         initial="hidden"
                         variants={boxVariants}
                         >
                         <h6>Contactame en otras redes sociales</h6>
-                        <div className='footer-icons'>
-                            <a className='footer-a' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank">
+                        <div className='footer__col__icons'>
+                            <a className='footer__icon footer__icon--linkedin' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>

@@ -5,7 +5,7 @@ import './Home.css'
 
 export default function Home(props) {
   return (
-    <div className='home-container' id='Inicio'>
+    <div className='home__container' id='Inicio'>
       <Profile />
       <Footer theme={props.theme} setTheme={props.setTheme} />
     </div>

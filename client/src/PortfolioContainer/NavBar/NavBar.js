@@ -6,43 +6,36 @@ import './NavBar.css'
 
 const NavBar = (props) => {
   const [clicked, setClicked] = useState(false);
-  // const handleClick = () => {
-  //   setClicked(!clicked)
-  // }
-  
-  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+  const [burger_class, setBurgerClass] = useState("burger__bar unclicked");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
   const handleClick = () => {
     if (!isMenuClicked) {
-      setBurgerClass("burger-bar clicked");
+      setBurgerClass("burger__bar clicked");
       setClicked(!clicked);
       setIsMenuClicked(true);
     } else {
-      setBurgerClass("burger-bar unclicked");
+      setBurgerClass("burger__bar unclicked");
       setClicked(!clicked);
       setIsMenuClicked(false);
     }
   };
 
   return (
-    <nav className='nav-bar-container' id='Inicio'>
-      <div className='menu-left'>
-        <div className='menu-title'>
-          <h1 className='nav-bar-logo'>Porfolio</h1>
+    <nav className='navbar' id='Inicio'>
+      <div className='navbar__left'>
+        <div className='navbar__title'>
+          <h1 className='navbar__logo'>Porfolio</h1>
         </div>
-        <div className='nav-toggle'>
+        <div className='navbar__toggle'>
           <Toggle theme={props.theme} setTheme={props.setTheme} />
         </div>
-        <div className="menu-icon" onClick={handleClick}>
+        <div className="navbar__burger--icon" onClick={handleClick}>
           <div className={burger_class}></div>
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
       </div>
-      {/* <div className='menu-icon' onClick={handleClick}>
-        <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-      </div> */}
-      <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+      <ul className={clicked ? 'navbar__menu active' : 'navbar__menu'}>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>

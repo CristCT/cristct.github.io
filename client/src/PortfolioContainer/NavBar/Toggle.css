@@ -21,7 +21,7 @@
     height: 1rem;
     transition: all 0.2s ease-in-out;
 }
-.toggle-button {
+.toggle-container__button {
     border-radius: 100%;
     position: absolute;
     height: 99%;

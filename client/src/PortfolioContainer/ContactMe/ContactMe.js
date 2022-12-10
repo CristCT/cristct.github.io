@@ -58,30 +58,32 @@ export default function ContactMe () {
     }, [controls, inView]);
     
     return (
-        <div className='contact-me-container' id='Contactame'>
-            <motion.div className='box'
+        <div className='contact-me__container' id='Contactame'>
+            <motion.div className='contact-me__box'
                 ref={ref}
                 variants={boxVariants}
                 initial="hidden"
                 animate={controls}
                 >
-                <div className="square" style={{'--i':0}}></div>
-                <div className="square" style={{'--i':1}}></div>
-                <div className="square" style={{'--i':2}}></div>
-                <div className="square" style={{'--i':3}}></div>
-                <div className="contact-me-grid">
-                    <div className="contact-me-image">
-                        <img className="imageclass" src={floatingAstronaut} alt="floating astronaut" />
+                <div className="contact-me__square" style={{'--i':0}}></div>
+                <div className="contact-me__square" style={{'--i':1}}></div>
+                <div className="contact-me__square" style={{'--i':2}}></div>
+                <div className="contact-me__square" style={{'--i':3}}></div>
+                <div className="contact-me__grid">
+                    <div className="contact-me__image">
+                        <img className="contact-me__image__move" src={floatingAstronaut} alt="floating astronaut" />
                     </div>
-                    <div className="contact-me-form">
-                        <div className="contact-me-text"><h1 className="contactme-title">Contactame</h1></div>
+                    <div className="contact-me__form">
+                        <div className="contact-me__text">
+                            <h1 className="contact-me__title">Contáctame</h1>
+                        </div>
                         <form onSubmit={sendEmail}>
-                            <label className="label-Contactme-Form">Nombre</label>
-                            <input className="input-Contactme-Form" type="text" name="name" value={formDetails.name} onChange={onFormUpdate} required />
-                            <label className="label-Contactme-Form">Email</label>
-                            <input className="input-Contactme-Form" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
-                            <label className="label-Contactme-Form">Mensaje</label>
-                            <textarea className="input-Contactme-Form textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
+                            <label className="contact-me__label">Nombre</label>
+                            <input className="contact-me__input" type="text" name="name" value={formDetails.name} onChange={onFormUpdate} required />
+                            <label className="contact-me__label">Email</label>
+                            <input className="contact-me__input" type="email" name="email" value={formDetails.email} onChange={onFormUpdate} required />
+                            <label className="contact-me__label">Mensaje</label>
+                            <textarea className="contact-me__input contact-me__textarea" name="message" value={formDetails.message} onChange={onFormUpdate} required />
                             <button
                                 className="glow-on-hover"
                                 type="submit"

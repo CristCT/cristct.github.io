@@ -1,4 +1,4 @@
-.footer-container {
+.footer__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
     font-family: 'Poppins';
 }
 
-.footer-row {
+.footer__row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,11 +20,11 @@
     margin-top: 150px;
 }
 
-.footer-col {
+.footer__col {
     display: flex;
 }
 
-.footer-icons {
+.footer__icon {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -32,14 +32,14 @@
     margin: 0;
 }
 
-.footer-a {
+.footer__icon {
     padding: 0;
     margin: 0;
 }
 
 /* media */
 @media screen and (max-width: 1110px) {
-    .footer-row {
+    .footer__row {
         margin-top: 60px;
     }
 }

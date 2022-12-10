@@ -12,7 +12,7 @@ function App() {
   const [theme, setTheme] = useState("dark");
     return ( 
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalStyles />
+        <GlobalStyles />
         <div className = "App">
             <NavBar theme={theme} setTheme={setTheme} />
             <Home theme={theme} setTheme={setTheme} />

@@ -47,17 +47,17 @@ export default function Projects() {
     }, [controlsTitle, inView]);
 
     return (
-        <div className="projects-container" id='Proyectos'>
+        <div className="projects" id='Proyectos'>
             <motion.div
-                className="projects-header"
+                className="projects__header"
                 animate={controlsTitle}
                 initial="hidden"
                 variants={boxVariants}
                 ref={ref}
                 >
-                <h1 className='projects-title'>PROYECTOS</h1>
+                <h1 className='projects__title'>PROYECTOS</h1>
             </motion.div>
-            <motion.div className="content-container"
+            <motion.div className="projects__content"
                 ref={ref}
                 animate={controlsTitle}
                 initial="hidden"
@@ -65,43 +65,43 @@ export default function Projects() {
                 >
                 {ProjectsData.map((project) => {
                     return (
-                        <div className={'content-card ' + project.card} key={project.name}>
-                            <Tilt className='tilt-card' options={{ max: 25 }} glareBorderRadius="20px">
-                                <div className="project-card">
+                        <div className={'projects__card ' + project.card} key={project.name}>
+                            <Tilt className='projects__card-tilt' options={{ max: 25 }} glareBorderRadius="20px">
+                                <div className="projects__card-inner">
                                     <Carousel stopOnHover={true} infiniteLoop={true} autoPlay={true} interval={5000} showThumbs={false} showStatus={false}>
                                         {project.images.map((image) => {
                                             return (
-                                                <div className='content-card-image' key={project.name}>
-                                                    <img className='card-img' src={image} alt={image} />
+                                                <div className='projects__card-image' key={project.name}>
+                                                    <img className='projects__card-img' src={image} alt={image} />
                                                 </div>
                                             );
                                         })}
                                     </Carousel>
-                                    <div className={'card-style'}>
+                                    <div className={'projects__card-style'}>
                                         <div>
-                                            <div className='card-title'><h6>{project.name}</h6></div>
-                                            {/* only 120 char description*/}
-                                            <p className='card-description'>{project.description[0].substring(0, 120)}...
+                                            <div className='projects__card-title'><h6>{project.name}</h6></div>
+                                            {/* the string is cut to keep only 120 char description */}
+                                            <p className='projects__card-description'>{project.description[0].substring(0, 120)}...
                                                 <motion.span
                                                     whileHover={{ scale: 1.1 }}
                                                     whileTap={{ scale: 0.9 }}
-                                                    className='read-more' onClick={() => {
+                                                    className='projects__card-read-more' onClick={() => {
                                                         changecontent(project);
-                                                    } }> Leer Más.
+                                                        }}> Leer Más.
                                                 </motion.span>
                                             </p>
-                                            <div className='card-stats'>
-                                                <div className='stat'>
+                                            <div className='projects__card-stats'>
+                                                <div className='projects__stat'>
                                                     <i className={project.icons[0]}></i>
-                                                    <p className='pStat'>{project.technology[0]}</p>
+                                                    <p className='projects__stat'>{project.technology[0]}</p>
                                                 </div>
-                                                <div className='stat'>
+                                                <div className='projects__stat'>
                                                     <i className={project.icons[1]}></i>
-                                                    <p className='pStat'>{project.technology[1]}</p>
+                                                    <p className='projects__stat'>{project.technology[1]}</p>
                                                 </div>
-                                                <div className='stat'>
+                                                <div className='projects__stat'>
                                                     {project.icons[2] === "" ? <i className=""></i> : <i className={project.icons[2]}></i>}
-                                                    <p className='pStat'>{project.technology[2]}</p>
+                                                    <p className='projects__stat'>{project.technology[2]}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@ export default function Projects() {
                     );
                 })}
             </motion.div>
-            {/* PopUp */}
+            {/* the PopUp is called and the data is passed to it in an array */}
             <AnimatePresence>
                 {openproject && <PopUp closePopup={setOpenPopup} project={popupcontent} />}
             </AnimatePresence>

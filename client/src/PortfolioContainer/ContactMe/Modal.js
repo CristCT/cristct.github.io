@@ -31,22 +31,22 @@ export default function Modal({closePopup, statusMessage}) {
   }, [controlsIncrease, controlsFade, inView]);
 
   return (
-    <motion.div className="modalBackground"
+    <motion.div className="modal__background"
       ref={ref}
       animate={controlsFade}
       initial="hidden"
       variants={boxFade}
       >
-      <motion.div className="modalContainer"
+      <motion.div className="modal__container"
         ref={ref}
         animate={controlsIncrease}
         initial="hidden"
         variants={boxIncrease}
         >
-        <div className="titleCloseBtn">
+        <div className="modal__container__button__close">
           <button onClick={() => closePopup(false)}>X</button>
         </div>
-        <div className="title">
+        <div className="modal__container__title">
         {statusMessage === "Enviado" ?(
           // Menssage Sent
           <h4>Mensaje<br></br>Enviado<br></br>

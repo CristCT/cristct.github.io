@@ -69,7 +69,7 @@ export default function PaginaNueva({project, closePopup}) {
       initial="hidden"
       variants={boxTelonL}
     ></motion.div>
-    <div className="popupBackground">
+    <div className="popup">
         {closePopup && (
           <motion.div className="popup__container"
             ref={ref}

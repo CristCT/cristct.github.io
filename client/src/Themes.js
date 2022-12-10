@@ -85,19 +85,13 @@ export const darkTheme = {
 export const GlobalStyles = createGlobalStyle`
     body {background: ${props => props.theme.background};}
     /* NavBar */
-    .nav-bar-container {background: ${props => props.theme.navbarBackground};}
-    .nav-bar-logo {color: ${props => props.theme.fontColorHome};}
-    .nav-links {
+    .navbar {background: ${props => props.theme.navbarBackground};}
+    .navbar__logo{color: ${props => props.theme.fontColorHome};}
+    .navbar__links {
         color: ${props => props.theme.navbarFontColor};
-        @media (max-width: 810px) {
-            color: ${props => props.theme.navbarFontColorMobile};
-            /* .fa-times, .fas.fa-bars {
-                color: ${props => props.theme.navbarIconMobile};
-            } */
-        }
     }
-    .nav-links:hover {background-color: ${props => props.theme.navbarHover};}
-    .nav-menu.active {
+    .navbar__links:hover {background-color: ${props => props.theme.navbarHover};}
+    .navbar__menu.active {
         /* if the screen is smaller than 810 */
         @media (max-width: 810px) {
             background-color: ${props => props.theme.navbarBackgroundMobile};
@@ -106,9 +100,8 @@ export const GlobalStyles = createGlobalStyle`
         @media (min-width: 810px) {
         }
     }
-    .fa-times, .fas.fa-bars {color: ${props => props.theme.navbarIconMobile};}
     /* Home */
-    .home-container {background: ${props => props.theme.homeBackground};}
+    .home__container {background: ${props => props.theme.homeBackground};}
     .primary-text {color: ${props => props.theme.fontColorHome};}
     .btn.primary-btn {color: ${props => props.theme.fontColorHome};}
     .btn.highlighted-btn {color: ${props => props.theme.fontColorHome};}
@@ -122,10 +115,10 @@ export const GlobalStyles = createGlobalStyle`
         display: ${props => props.theme.blurDisplay};
     }
     /* projects */
-    .projects-container {background: ${props => props.theme.projectBackground};}
-    .projects-title {color: ${props => props.theme.fontColorProjectsTitle};}
-    .content-container {color: ${props => props.theme.fontColorCard};}
-    .tilt-card {
+    .projects {background: ${props => props.theme.projectBackground};}
+    .projects__title {color: ${props => props.theme.fontColorProjectsTitle};}
+    .projects__content {color: ${props => props.theme.fontColorCard};}
+    .projects__card-tilt {
         border: ${props => props.theme.border}px solid ${props => props.theme.fontColorCard};
         border-radius: ${props => props.theme.borderRadius};
     }
@@ -135,17 +128,14 @@ export const GlobalStyles = createGlobalStyle`
     .popup__content__info {color: ${props => props.theme.popupFontDescriptionColor};}
     .popup__content__info__header__title {color: ${props => props.theme.popupFontTitleColor};}
     /* contact */
-    .contact-me-container {
+    .contact-me__container {
         background: ${props => props.theme.contactBackground};
     }
-    .boxInit {
-        background-color: ${props => props.theme.contactInitBackground};
-    }
     /* Footer */
-    .footer-backgroundTheme {
+    .footer__background {
         background: ${props => props.theme.footerBackgroundTheme};
     }
-    .footer-row {
+    .footer__row{
         background: ${props => props.theme.footerBackground};
         color: ${props => props.theme.footerFontColor};
     }

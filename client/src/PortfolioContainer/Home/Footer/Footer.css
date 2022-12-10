@@ -1,26 +1,24 @@
-.footer-container {
+.footer__container {
     height: 17.8%;
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
-.footer-parent {
+.footer__parent {
     width: 100%;
     height: 100%;
     max-width: 1920px;
 }
-.footer-parent img {
+.footer__parent img {
     /* expand image to cover footer complete */
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* max-width: 100%;  */
-    /* height: 100%; */
 }
 
 @media only screen and (max-width: 1110px) {
-    .footer-parent {
+    .footer__parent {
         display: flex;
         align-items: flex-end;
     }

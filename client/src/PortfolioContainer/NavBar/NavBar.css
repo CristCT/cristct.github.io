@@ -1,19 +1,15 @@
-.nav-bar-container {
+.navbar {
     background: linear-gradient(90deg, rgb(87, 49, 255) 0%, rgb(47, 0, 255) 100%);
     height: 80px;
     width: 100%;
     display: flex;
-    /* position: fixed;
-    top: 0;
-    z-index: 1030; */
     justify-content: center;
     align-items: center;
     font-family: 'Poppins Medium';
     font-size: 1.2rem;
-    z-index: 1;
 }
 
-.menu-left {
+.navbar__left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -22,23 +18,18 @@ a:hover {
     text-decoration: none;
 }
 
-.nav-bar-logo {
+.navbar__logo {
     color: rgb(255, 255, 255);
     justify-self: start;
     margin-left: 30px;
     cursor: pointer;
 }
 
-.fa-react {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-}
-
-.nav-toggle {
+.navbar__toggle {
     display: flex;
 }
 
-.nav-menu {
+.navbar__menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -52,7 +43,7 @@ a:hover {
     z-index: 1;
 }
 
-.nav-links {
+.navbar__links {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -60,7 +51,7 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.nav-links:hover {
+.navbar__links:hover {
     color: #fff;
     background-color: rgb(89, 72, 241);
     border-radius: 4px;
@@ -68,30 +59,13 @@ a:hover {
     z-index: 1;
 }
 
-.fa-bars {
-    color: #fff;
-}
-
 /* burger */
-.menu-icon {
+.navbar__burger--icon {
     display: none;
     z-index: 1;
 }
 
-.burger-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    z-index: 5;
-}
-
-.burger-bar {
+.burger__bar {
     width: 2em;
     height: 0.2em;
     margin: 10%;
@@ -101,29 +75,29 @@ a:hover {
 
 /* ----- animations--------- */
 /* clicked */
-.burger-bar.clicked:nth-child(1){
+.burger__bar.clicked:nth-child(1){
     transform: rotate(45deg) translateY(8px) translateX(8px);
     transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
+.burger__bar.clicked:nth-child(2){
     transform: scale(0.1);
     transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
+.burger__bar.clicked:nth-child(3){
     transform: rotate(-45deg) translateY(-3px) translateX(3px);
     transition: ease-out 0.5s;
 }
 
 /* unclicked */
-.burger-bar.unclicked {
+.burger__bar.unclicked {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 @media screen and (max-width: 810px) {
-    .nav-menu {
+    .navbar__menu {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -136,10 +110,10 @@ a:hover {
         transition: all 0.4s ease-out;
         z-index: 2;
     }
-    .menu-left {
+    .navbar__left {
         display: flex;
     }
-    .nav-menu.active {
+    .navbar__menu.active {
         background: rgb(58, 39, 231);
         padding-left: 0px;
         left: 0;
@@ -147,13 +121,13 @@ a:hover {
         transition: all 0.4s ease-out;
         z-index: 2;
     }
-    .nav-links {
+    .navbar__links {
         text-align: center;
         padding: 1rem;
         width: 100%;
         display: table;
     }
-    .nav-bar-logo {
+    .navbar__logo {
         position: absolute;
         top: 0;
         left: 0;
@@ -161,7 +135,7 @@ a:hover {
         padding: 0;
         transform: translate(35%, 25%);
     }
-    .menu-icon {
+    .navbar__burger--icon {
         display: block;
         position: absolute;
         top: 5;
@@ -169,13 +143,9 @@ a:hover {
         transform: translate(-100%, 50%);
         cursor: pointer;
     }
-    .fa-times {
-        color: #fff;
-        font-size: 2rem;
-    }
 }
 @media screen and (max-width: 478px) {
-    .nav-menu {
+    .navbar__menu {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -187,11 +157,11 @@ a:hover {
         opacity: 1;
         transition: all 0.4s ease-out;
     }
-    .menu-left {
+    .navbar__left {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .nav-bar-logo {
+    .navbar__logo {
         transform: translate(30%, 50%);
         font-size: 2rem;
     }

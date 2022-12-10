@@ -15,7 +15,7 @@ const Toggle = (props) => {
         <div className='toggle-container' onClick={themeToggler}>
             <i className="fas fa-sun"></i>
             <i className="fas fa-moon"></i>
-            <div className="toggle-button"
+            <div className="toggle-container__button"
                 style={{
                     transform: props.theme === "light" ? "translateX(0)" : "translateX(100%)",
                     background: props.theme === "light" ? "yellow" : "black",
