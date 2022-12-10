@@ -1,5 +1,5 @@
 import './Footer.css';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
@@ -32,7 +32,7 @@ export default function Footer () {
                         >
                         <h6>Contactame en otras redes sociales</h6>
                         <div className='footer__col__icons'>
-                            <a className='footer__icon footer__icon--linkedin' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank" rel="noreferrer">
+                            <a className='footer__icon footer__icon--linkedin' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>
