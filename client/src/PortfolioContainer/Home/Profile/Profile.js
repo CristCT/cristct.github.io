@@ -31,7 +31,7 @@ export default function Profile() {
 
   return (
     <div className='profile-container'>
-      <div className='profile-parent'>
+      <div className='profile'>
           <div className='stars'>
             <span></span>
             <span></span>
@@ -43,14 +43,14 @@ export default function Profile() {
             <span></span>
             <span></span>
           </div>
-        <motion.div className='profile-details'
+        <motion.div className='profile__details'
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={boxVariants}
           >
-          <div className='colz'>
-            <div className='colz-icon'>
+          <div className='col'>
+            <div className='col_icon'>
               <a href='#'>
                   <i className='fa fa-facebook-square'/>
               </a>
@@ -68,13 +68,13 @@ export default function Profile() {
               </a>
             </div>
           </div>
-          <div className='profile-details-name'>
+          <div className='profile__name'>
             <span className='primary-text'>
               {" "}
               Hola, Soy <span className='highlighted-text'>Cristian</span>
             </span>
           </div>
-          <div className='profile-details-role'>
+          <div className='profile__role'>
             <span className='primary-text'>
               <h1 className='h1-min'>
                 <Typewriter
@@ -86,13 +86,13 @@ export default function Profile() {
                   }}
                 />
               </h1>
-              <span className='profile-role-tagline'>
+              <span className='profile__tagline'>
                 con habilidad para crear aplicaciones con operaciones de
                 front-end y back-end.
               </span>
             </span>
           </div>
-          <div className='profile-options'>
+          <div className='profile__options'>
             <button className='btn primary-btn'>
               <Link
                 to='Contactame'
@@ -111,13 +111,13 @@ export default function Profile() {
             </a>
           </div>
         </motion.div>
-        <motion.div className='profile-picture'
+        <motion.div className='profile__picture'
           ref={ref}
           animate={controls2}
           initial="hidden"
           variants={boxVariants2}
           >
-          <div className='profile-picture-background'></div>
+          <div className='profile__picture-background'></div>
         </motion.div>
         <div className="blur init"></div>
         <div className="blur uno"></div>

@@ -119,6 +119,12 @@ export const GlobalStyles = createGlobalStyle`
         background: ${props => props.theme.blurProfileTra};
         display: ${props => props.theme.blurDisplay};
     }
+    /* star */
+    .stars {
+        ${'' /* display: ${props => props.theme.starDisplayOff}; */}
+        width: ${props => props.theme.starWidth};
+        height: ${props => props.theme.starHeight};
+    }
     /* projects */
     .projects {background: ${props => props.theme.projectBackground};}
     .projects__title {color: ${props => props.theme.fontColorProjectsTitle};}
@@ -143,12 +149,6 @@ export const GlobalStyles = createGlobalStyle`
     .footer__row{
         background: ${props => props.theme.footerBackground};
         color: ${props => props.theme.footerFontColor};
-    }
-    /* star */
-    .stars {
-        ${'' /* display: ${props => props.theme.starDisplayOff}; */}
-        width: ${props => props.theme.starWidth};
-        height: ${props => props.theme.starHeight};
     }
     /* scroll bar */
     ::-webkit-scrollbar {
