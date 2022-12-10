@@ -2,16 +2,11 @@ import React from "react";
 import './Toggle.css'
 
 const Toggle = (props) => {
-    const handleClick = () => {
-        props.theme.dispatch({ type: "toggle" });
-    }
-
     const themeToggler = () => {
         props.theme === "light" ? props.setTheme("dark") : props.setTheme("light");
     }
 
     return (
-        // <div className='toggle-container' onClick={handleClick and handleClick}></div>
         <div className='toggle-container' onClick={themeToggler}>
             <i className="fas fa-sun"></i>
             <i className="fas fa-moon"></i>
