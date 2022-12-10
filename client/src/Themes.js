@@ -7,11 +7,12 @@ export const lightTheme = {
     fontColorHome: '#000',
     // navbar
     navbarBackground: 'transparent',
-    navbarFontColor: '#000',
+    navbarFontColor: '#fff',
     navbarHover: '#5948f1',
     navbarFontColorMobile: '#fff',
     navbarBackgroundMobile: 'rgba(81, 124, 255, 0.96)',
     navbarIconMobile: '#000',
+    burger__bar: '#000',
     // projects
     border: 1,
     projectBackground: '#0099FF',
@@ -53,6 +54,7 @@ export const darkTheme = {
     navbarHover: '#3379b3',
     navbarBackgroundMobile: 'rgba(29, 5, 114,0.96)',
     navbarIconMobile: '#fff',
+    burger__bar: '#fff',
     // projects
     border: 0,
     projectBackground: '#000B76',
@@ -99,6 +101,9 @@ export const GlobalStyles = createGlobalStyle`
         /* if the screen is bigger than 810 */
         @media (min-width: 810px) {
         }
+    }
+    .burger__bar {
+        background-color: ${props => props.theme.burger__bar};
     }
     /* Home */
     .home__container {background: ${props => props.theme.homeBackground};}
