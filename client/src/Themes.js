@@ -7,7 +7,8 @@ export const lightTheme = {
     fontColorHome: '#000',
     // navbar
     navbarBackground: 'transparent',
-    navbarFontColor: '#fff',
+    navbarFontColor: '#000',
+    navbarHamburgerFontColor: '#fff',
     navbarHover: '#5948f1',
     navbarFontColorMobile: '#fff',
     navbarBackgroundMobile: 'rgba(81, 124, 255, 0.96)',
