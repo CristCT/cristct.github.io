@@ -25,7 +25,7 @@
 }
 .profile__name {
     font-size: 24px;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins SemiBold', sans-serif;
 }
 .profile__role {
     display: flex;
