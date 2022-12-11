@@ -31,6 +31,8 @@ export const lightTheme = {
     footerBackgroundTheme: '#0099FF',
     footerBackground: '#0055ff',
     footerFontColor: '#fff',
+    footerIconColor: '#fff',
+    footerIconHoverColor: '#ff5100',
     // star display off
     starDisplayOff: 'none',
     starWidth: '0%',
@@ -71,6 +73,8 @@ export const darkTheme = {
     footerBackgroundTheme: '#000B76',
     footerBackground: '#000000',
     footerFontColor: '#fff',
+    footerIconColor: '#fff',
+    footerIconHoverColor: '#ff5100',
     blurProfile: '#340A20',
     blurProfileDos: '#2C192F',
     blurProfileTra: 'transparent',
@@ -147,9 +151,15 @@ export const GlobalStyles = createGlobalStyle`
     .footer__background {
         background: ${props => props.theme.footerBackgroundTheme};
     }
-    .footer__row{
+    .footer__grid{
         background: ${props => props.theme.footerBackground};
         color: ${props => props.theme.footerFontColor};
+    }
+    .footer__icon {
+        color: ${props => props.theme.footerIconColor};
+    }
+    .footer__icon:hover {
+        color: ${props => props.theme.footerIconHoverColor};
     }
     /* scroll bar */
     ::-webkit-scrollbar {
