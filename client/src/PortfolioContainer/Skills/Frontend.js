@@ -44,6 +44,20 @@ const Frontend = () => {
                             <h4>Angular</h4>
                         </div>
                     </div>
+                    <div className="skills__data">
+                    {/* bootstrap */}
+                    <i className="fab fa-bootstrap"></i>
+                        <div className="skills__name">
+                            <h4>Bootstrap</h4>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                    {/* git */}
+                    <i className="bx bxl-git"></i>
+                        <div className="skills__name">
+                            <h4>Git</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

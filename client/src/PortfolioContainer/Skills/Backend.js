@@ -27,13 +27,20 @@ const Backend = () => {
                     <div className="skills__data">
                         <i className="fas fa-database"></i>
                         <div className="skills_name">
-                            <h4>FireBase</h4>
+                            <h4>SQL</h4>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="fas fa-database"></i>
                         <div className="skills_name">
-                            <h4>SQL</h4>
+                            <h4>FireBase</h4>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                    {/* PostgreSQL */}
+                        <i className="fas fa-database"></i>
+                        <div className="skills_name">
+                            <h4>PostgreSQL</h4>
                         </div>
                     </div>
                 </div>
