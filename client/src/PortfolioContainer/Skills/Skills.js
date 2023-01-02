@@ -23,7 +23,7 @@ const Skills = () => {
         }
     }, [controlsTitle, inView]);
     return (
-        <div className="skills__body">
+        <div className="skills__head">
             <motion.section className="skills"
                     animate={controlsTitle}
                     initial="hidden"

@@ -141,9 +141,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     /* skills */
     .skills {background: ${props => props.theme.skillsBackground};}
+    .skills__head {background: ${props => props.theme.skillsBackground};}
     .skills__title {color: ${props => props.theme.skillsFontColorTitle};}
     .skills__container {color: ${props => props.theme.skillsFontColorDescription};}
-    .skills__body {background: ${props => props.theme.skillsBackground};}
     /* projects */
     .projects {background: ${props => props.theme.projectBackground};}
     .projects__title {color: ${props => props.theme.fontColorProjectsTitle};}
