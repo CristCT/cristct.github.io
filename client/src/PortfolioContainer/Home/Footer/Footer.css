@@ -8,7 +8,7 @@
 .footer__parent {
     width: 100%;
     height: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
 }
 .footer__parent img {
     /* expand image to cover footer complete */

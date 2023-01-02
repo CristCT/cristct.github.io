@@ -14,6 +14,11 @@ export const lightTheme = {
     navbarBackgroundMobile: 'rgba(81, 124, 255, 0.96)',
     navbarIconMobile: '#000',
     burger__bar: '#000',
+    // skills
+    skillsBackground: '#0099FF',
+    skillsFontColor: '#fff',
+    skillsFontColorTitle: '#fff',
+    skillsFontColorDescription: '#fff',
     // projects
     border: 1,
     projectBackground: '#0099FF',
@@ -58,6 +63,11 @@ export const darkTheme = {
     navbarBackgroundMobile: 'rgba(29, 5, 114,0.96)',
     navbarIconMobile: '#fff',
     burger__bar: '#fff',
+    // skills
+    skillsBackground: '#000B76',
+    skillsFontColor: '#fff',
+    skillsFontColorTitle: '#fff',
+    skillsFontColorDescription: '#fff',
     // projects
     border: 0,
     projectBackground: '#000B76',
@@ -130,6 +140,10 @@ export const GlobalStyles = createGlobalStyle`
         width: ${props => props.theme.starWidth};
         height: ${props => props.theme.starHeight};
     }
+    /* skills */
+    .skills {background: ${props => props.theme.skillsBackground};}
+    .skills__title {color: ${props => props.theme.skillsFontColorTitle};}
+    .skills__container {color: ${props => props.theme.skillsFontColorDescription};}
     /* projects */
     .projects {background: ${props => props.theme.projectBackground};}
     .projects__title {color: ${props => props.theme.fontColorProjectsTitle};}
@@ -151,7 +165,7 @@ export const GlobalStyles = createGlobalStyle`
     .footer__background {
         background: ${props => props.theme.footerBackgroundTheme};
     }
-    .footer__grid{
+    .footer__content{
         background: ${props => props.theme.footerBackground};
         color: ${props => props.theme.footerFontColor};
     }

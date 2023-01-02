@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./PortfolioContainer/NavBar/NavBar";
 import Home from "./PortfolioContainer/Home/Home";
+import Skills from "./PortfolioContainer/Skills/Skills";
 import Projects from "./PortfolioContainer/Projects/Projects";
 import ContactMe from "./PortfolioContainer/ContactMe/ContactMe";
 import Footer from "./PortfolioContainer/Footer/Footer";
@@ -16,6 +17,7 @@ function App() {
         <div className = "App">
             <NavBar theme={theme} setTheme={setTheme} />
             <Home theme={theme} setTheme={setTheme} />
+            <Skills />
             <Projects />
             <ContactMe />
             <Footer />

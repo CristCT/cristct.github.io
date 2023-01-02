@@ -28,21 +28,21 @@ export default function Footer () {
     return (
         <div className='footer__container'>
             <div className='footer__background'>
-                <div className='footer__grid'>
-                    <motion.div className='footer__grid__item'
+                <div className='footer__content'>
+                    <motion.div className='footer__content__item'
                         ref={ref}
                         animate={controls}
                         initial="hidden"
                         variants={boxVariantsL}
                         >
-                        <div className='footer__grid__item__description'>
+                        <div className='footer__content__item__description'>
                             <p>Gracias por visitar mi porfolio. 
                             Si gustas, no dudes en seguirme en otras redes 
                             sociales y descubrir más proyectos y contenido 
                             interesante. ¡Te espero!</p>
                         </div>
                     </motion.div>
-                    <motion.div className='footer__grid__item'
+                    <motion.div className='footer__content__item'
                         ref={ref}
                         animate={controls}
                         initial="hidden"
