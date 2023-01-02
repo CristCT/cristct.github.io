@@ -23,20 +23,23 @@ const Skills = () => {
         }
     }, [controlsTitle, inView]);
     return (
-        <motion.section className="skills"
-                animate={controlsTitle}
-                initial="hidden"
-                variants={boxVariants}
-                ref={ref}
-                >
-            <div className="skills__title">
-                <h1>SKILLS</h1>
-            </div>
-            <div className="skills__container container grid">
-                <Frontend />
-                <Backend />
-            </div>
-        </motion.section>
+        <div className="skills__body">
+            <motion.section className="skills"
+                    animate={controlsTitle}
+                    initial="hidden"
+                    variants={boxVariants}
+                    ref={ref}
+                    id="skills"
+                    >
+                <div className="skills__title">
+                    <h1>SKILLS</h1>
+                </div>
+                <div className="skills__container container grid">
+                    <Frontend />
+                    <Backend />
+                </div>
+            </motion.section>
+        </div>
     );
 };
 

@@ -52,6 +52,13 @@ const Frontend = () => {
                         </div>
                     </div>
                     <div className="skills__data">
+                    {/* Flutter */}
+                    <i className="bx bxl-flutter"></i>
+                        <div className="skills__name">
+                            <h4>Flutter</h4>
+                        </div>
+                    </div>
+                    <div className="skills__data">
                     {/* git */}
                     <i className="bx bxl-git"></i>
                         <div className="skills__name">

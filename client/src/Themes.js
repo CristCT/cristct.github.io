@@ -16,7 +16,6 @@ export const lightTheme = {
     burger__bar: '#000',
     // skills
     skillsBackground: '#0099FF',
-    skillsFontColor: '#fff',
     skillsFontColorTitle: '#fff',
     skillsFontColorDescription: '#fff',
     // projects
@@ -144,6 +143,7 @@ export const GlobalStyles = createGlobalStyle`
     .skills {background: ${props => props.theme.skillsBackground};}
     .skills__title {color: ${props => props.theme.skillsFontColorTitle};}
     .skills__container {color: ${props => props.theme.skillsFontColorDescription};}
+    .skills__body {background: ${props => props.theme.skillsBackground};}
     /* projects */
     .projects {background: ${props => props.theme.projectBackground};}
     .projects__title {color: ${props => props.theme.fontColorProjectsTitle};}
