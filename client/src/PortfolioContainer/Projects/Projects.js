@@ -55,7 +55,9 @@ export default function Projects() {
                 variants={boxVariants}
                 ref={ref}
                 >
-                <h1 className='projects__title'>PROYECTOS</h1>
+                <div className="projects__title">
+                    <h1>PROYECTOS</h1>
+                </div>
             </motion.div>
             <motion.div className="projects__content"
                 ref={ref}

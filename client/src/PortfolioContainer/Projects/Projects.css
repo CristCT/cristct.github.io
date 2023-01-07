@@ -12,15 +12,16 @@
     font-family: 'Poppins';
 }
 
-.projects__header {
+.projects__title {
     color: #fff;
-    font-size: 1rem;
     font-family: 'Poppins Semibold', sans-serif;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    pointer-events: none;
 }
 
 .projects__content {
-    margin-bottom: 150px;
+    margin-bottom: 8.75rem;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -119,7 +120,6 @@
     .projects__content {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        margin-bottom: 30px;
     }
     .projects__card-stats {
         border-radius: 0 0 20px 20px ;
@@ -141,6 +141,9 @@
 }
 
 @media screen and (max-width: 616px) {
+    .projects__content {
+        margin-bottom: 5rem;
+    }
     .projects {
         padding-top: 0px;
         padding-bottom: 10px;
