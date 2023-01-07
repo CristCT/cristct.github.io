@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./GoTop.css";
 import { Link } from 'react-scroll'
 import { AnimatePresence, motion } from "framer-motion";
@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 const GoTop = ({ closePopup }) => {
     const [hasScrolled, setHasScrolled] = useState(false);
     // Sets the scroll threshold for wide and narrow screen
-    let scrollThresholdNarrow = 20;
     let scrollThreshold = 50;
     // Use media queries to adjust the scroll threshold
     if (matchMedia) {
@@ -18,28 +17,27 @@ const GoTop = ({ closePopup }) => {
     function WidthChange(mq) {
         if (mq.matches) {
             // Narrow screen: set the threshold to scrollThreshold
-            scrollThresholdNarrow = 20;
+            scrollThreshold = 20;
         } else {
             // Widescreen: set the threshold to scrollThreshold
             scrollThreshold = 50;
         }
         if (matchMedia) {
-            // 320px or smaller screen: set the threshold to scrollThreshold
-            const mq320 = window.matchMedia("(max-width: 320px)");
-            if (mq320.matches) {
-                scrollThreshold = 70;
+            // 810px or smaller screen: set the threshold to scrollThreshold
+            const mq810 = window.matchMedia("(max-width: 810px)");
+            if (mq810.matches) {
+                scrollThreshold = 150;
             } 
         }
     }
     // Check if the scroll has been done and change the state accordingly
     window.onscroll = function() {
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThresholdNarrow) {
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
             setHasScrolled(true);
         } else {
             setHasScrolled(false);
         }
     };
-
     // Receive from project to hide or show the button GoTop
     const handlePopupOpen = () => {
         setHasScrolled(false);
