@@ -3,7 +3,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 4;
     background: #110247;
     position: fixed;
     display: flex;
@@ -16,7 +16,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 4;
     background: #110247;
     position: fixed;
     display: flex;
@@ -29,7 +29,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     /* background: rgba(0, 0, 0, 0.5); */
     position: fixed;
     display: flex;
@@ -48,7 +48,7 @@
     color: #000;
     font-size: 1rem;
     font-family: 'Poppins SemiBold';
-    z-index: 1;
+    z-index: 2;
 }
 .popup__header__bar {
     display: flex;
