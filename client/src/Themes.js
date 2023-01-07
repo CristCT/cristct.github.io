@@ -47,6 +47,10 @@ export const lightTheme = {
     scrollBarBorderRadius: '0px',
     scrollBarBackgroundBaseThumb: '#922d2d',
     scrollBarBackgroundHover: '#a12828',
+    // goTop
+    goTopBackground: '#fff',
+    goTopBackgroundHover: '#FC5D3B',
+    goTopIconColor: '#000',
 }
 
 export const darkTheme = {
@@ -96,6 +100,10 @@ export const darkTheme = {
     scrollBarBorderRadius: '0px',
     scrollBarBackgroundBaseThumb: '#922d2d',
     scrollBarBackgroundHover: '#a12828',
+    // goTop
+    goTopBackground: '#922d2d',
+    goTopBackgroundHover: '#FC5D3B',
+    goTopIconColor: '#000',
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -174,6 +182,16 @@ export const GlobalStyles = createGlobalStyle`
     }
     .footer__icon:hover {
         color: ${props => props.theme.footerIconHoverColor};
+    }
+    /* GoTop */
+    .goTop {
+        background-color: ${props => props.theme.goTopBackground};
+    }
+    .goTop:hover {
+        background-color: ${props => props.theme.goTopBackgroundHover};
+    }
+    .goTop__icon {
+        color: ${props => props.theme.goTopIconColor};
     }
     /* scroll bar */
     ::-webkit-scrollbar {
