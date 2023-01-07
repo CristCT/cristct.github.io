@@ -14,6 +14,7 @@ const GoTop = ({ closePopup }) => {
         }
     };
 
+    // Receive from project to hide or show the button GoTop
     const handlePopupOpen = () => {
         setHasScrolled(false);
     };
