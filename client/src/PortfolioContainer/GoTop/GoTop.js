@@ -3,7 +3,7 @@ import "./GoTop.css";
 import { Link } from 'react-scroll'
 import { AnimatePresence, motion } from "framer-motion";
 
-const GoTop = () => {
+const GoTop = ({ closePopup }) => {
     const [hasScrolled, setHasScrolled] = useState(false);
     // Check if the scroll has been done and change the state accordingly
     window.onscroll = function() {
@@ -12,6 +12,10 @@ const GoTop = () => {
         } else {
             setHasScrolled(false);
         }
+    };
+
+    const handlePopupOpen = () => {
+        setHasScrolled(false);
     };
 
     return (

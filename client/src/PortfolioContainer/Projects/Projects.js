@@ -7,8 +7,11 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PopUp from './PopUp';
 import './Projects.css'
+import GoTop from '../GoTop/GoTop';
 
 export default function Projects() {
+    //GoTop Disable
+    const [hasScrolled, setHasScrolled] = useState(false);
     // PopUp
     const [openproject, setOpenPopup] = useState(false);
     const [popupcontent, setPopupcontent] = useState([]);
@@ -117,6 +120,8 @@ export default function Projects() {
             {/* the PopUp is called and the data is passed to it in an array */}
             <AnimatePresence>
                 {openproject && <PopUp closePopup={setOpenPopup} project={popupcontent} />}
+                {/* We can use the following line when we want to deactivate the GoTop Button*/}
+                {/* <GoTop handlePopupOpen={setHasScrolled}/> */}
             </AnimatePresence>
         </div>
     )

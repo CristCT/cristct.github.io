@@ -24,7 +24,6 @@
     margin: 0;
     padding: 0;
     border-radius: 20px;
-    z-index: 2;
 }
 .contact-me__box .contact-me__square {
     position: absolute;
@@ -47,6 +46,7 @@
         transform: translateY(40px);
     }
 }
+
 .contact-me__box .contact-me__square:nth-child(1) {
     top: 10px;
     right: -60px;
