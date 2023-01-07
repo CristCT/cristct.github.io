@@ -59,16 +59,17 @@ export default function ContactMe () {
     
     return (
         <div className='contact-me__container' id='Contactame'>
-            <motion.div className='contact-me__box'
+            <motion.div 
+                className='contact-me__box'
                 ref={ref}
                 variants={boxVariants}
                 initial="hidden"
                 animate={controls}
                 >
-                <div className="contact-me__square" style={{'--i':0}}></div>
+                <div className="contact-me__square" style={{'--i':0, zIndex: 12}}></div>
                 <div className="contact-me__square" style={{'--i':1}}></div>
                 <div className="contact-me__square" style={{'--i':2}}></div>
-                <div className="contact-me__square" style={{'--i':3}}></div>
+                <div className="contact-me__square" style={{'--i':3, zIndex: 1}}></div>
                 <div className="contact-me__grid">
                     <div className="contact-me__image">
                         <img className="contact-me__image__move" src={floatingAstronaut} alt="floating astronaut" />

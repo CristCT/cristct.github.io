@@ -38,7 +38,7 @@ export default function Footer () {
                         <div className='footer__content__item__description'>
                             <p>Gracias por visitar mi porfolio. 
                             Si gustas, no dudes en seguirme en otras redes 
-                            sociales y descubrir más proyectos y contenido 
+                            sociales para descubrir más proyectos y contenido 
                             interesante. ¡Te espero!</p>
                         </div>
                     </motion.div>
