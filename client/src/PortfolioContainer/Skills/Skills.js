@@ -29,10 +29,10 @@ const Skills = () => {
                     initial="hidden"
                     variants={boxVariants}
                     ref={ref}
-                    id="skills"
+                    id="Skills"
                     >
                 <div className="skills__title">
-                    <h1>SKILLS</h1>
+                    <h1>HABILIDADES</h1>
                 </div>
                 <div className="skills__container container grid">
                     <Frontend />

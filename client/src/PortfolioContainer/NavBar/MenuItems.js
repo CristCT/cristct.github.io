@@ -5,8 +5,8 @@ export const MenuItems = [
         cName: 'navbar__links'
     },
     {
-        title: 'Acerca de',
-        url: 'Acerca-de',
+        title: 'Habilidades',
+        url: 'Skills',
         cName: 'navbar__links'
     },
     {

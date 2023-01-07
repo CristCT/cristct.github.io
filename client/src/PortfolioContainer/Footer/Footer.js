@@ -1,5 +1,5 @@
 import './Footer.css';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
@@ -49,10 +49,10 @@ export default function Footer () {
                         variants={boxVariantsR}
                         >
                         <div className='footer__col__icons'>
-                            <a className='footer__icon footer__icon--github' href='https://github.com/CristCT' target="_blank">
+                            <a className='footer__icon footer__icon--github' href='https://github.com/CristCT' target="_blank" rel="noreferrer">
                                 <i className="fab fa-github"></i>
                             </a>
-                            <a className='footer__icon footer__icon--linkedin' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank">
+                            <a className='footer__icon footer__icon--linkedin' href='https://www.linkedin.com/in/cristian-cuevas-tapia/' target="_blank" rel="noreferrer">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>
