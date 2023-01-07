@@ -121,8 +121,8 @@ export default function Projects() {
             <AnimatePresence>
                 {openproject && <PopUp closePopup={setOpenPopup} project={popupcontent} />}
                 {/* following line when we want to deactivate the GoTop Button*/}
-                <GoTop handlePopupOpen={setHasScrolled}/>
             </AnimatePresence>
+                <GoTop handlePopupOpen={setHasScrolled}/>
         </div>
     )
 }

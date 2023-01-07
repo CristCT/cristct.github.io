@@ -1,7 +1,8 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 import './PopUp.css'
+import GoTop from '../GoTop/GoTop';
 
 export default function PaginaNueva({project, closePopup}) {
 
@@ -21,12 +22,13 @@ export default function PaginaNueva({project, closePopup}) {
   query({"inputs": "En términos técnicos, Python es un lenguaje de programación de alto nivel, orientado a objetos, con una semántica dinámica y también integrada, principalmente para el desarrollo web y de aplicaciones informáticas. Es muy atractivo en el campo del Desarrollo Rápido de Aplicaciones (RAD) porque ofrece tipificación dinámica y opciones de encuadernación dinámicas. Python es relativamente simple, por lo que es fácil de aprender, ya que requiere una sintaxis única que se centra en la legibilidad. Los desarrolladores pueden leer y traducir el código Python mucho más fácilmente que otros lenguajes."}).then((response) => {
     console.log(JSON.stringify(response));
   });
-  // ------------------------------
 
   const enableScroll = () => {  
     window.onscroll = null;
     document.body.style.overflowY = 'scroll';
   }
+  const [hasScrolled, setHasScrolled] = useState(false);
+
   // framer motion
   const boxSlide = {
     hidden: { x: 0, opacity: 0, transition: { delay: 1 } },
@@ -57,6 +59,7 @@ export default function PaginaNueva({project, closePopup}) {
   const unMount = () => {
     enableScroll();
     closePopup(false);
+    // <GoTop handlePopupOpen={setHasScrolled} />
   };
   return (
     <><motion.div className="telonR"
