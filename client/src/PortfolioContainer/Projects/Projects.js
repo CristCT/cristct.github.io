@@ -120,9 +120,8 @@ export default function Projects() {
             {/* the PopUp is called and the data is passed to it in an array */}
             <AnimatePresence>
                 {openproject && <PopUp closePopup={setOpenPopup} project={popupcontent} />}
-                {/* following line when we want to deactivate the GoTop Button*/}
             </AnimatePresence>
-                <GoTop handlePopupOpen={setHasScrolled}/>
+            <GoTop handlePopupOpen={setHasScrolled}/>
         </div>
     )
 }
