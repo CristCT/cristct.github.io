@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/porfolio/static/css/main.0e88f260.css",
-    "main.js": "/porfolio/static/js/main.a9454e5f.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/porfolio/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/EnDesarrollo2.png": "/porfolio/static/media/EnDesarrollo2.254321f31a72e3f6f0d2.png",
-    "static/media/sendMessage.gif": "/porfolio/static/media/sendMessage.54d85cc30f0fbf24a587.gif",
-    "static/media/errorMessage.gif": "/porfolio/static/media/errorMessage.4787679e0512f0d92967.gif",
-    "static/media/portada.png": "/porfolio/static/media/portada.bb08652f316113bc8fdd.png",
-    "static/media/secciónConsultar.png": "/porfolio/static/media/secciónConsultar.51632bdec3b9ba4a6a2e.png",
-    "static/media/portadaGameMania.png": "/porfolio/static/media/portadaGameMania.3a7de9f0fad6d67f580a.png",
-    "static/media/DashBoardEliminar.png": "/porfolio/static/media/DashBoardEliminar.4b8bb71aa06e372b4c6e.png",
-    "static/media/Personas.png": "/porfolio/static/media/Personas.5fd2a106c95a7c6e5a8f.png",
-    "static/media/DashBoardEditar.png": "/porfolio/static/media/DashBoardEditar.1800f7f16d533131b989.png",
-    "static/media/DashBoard.png": "/porfolio/static/media/DashBoard.464d2f2c70f13196f74a.png",
-    "static/media/secciónRegistrar.png": "/porfolio/static/media/secciónRegistrar.f9fe494c52c993deffcc.png",
-    "static/media/profilephoto.jpg": "/porfolio/static/media/profilephoto.0943c94927d996b64d66.jpg",
-    "static/media/Floating-Astronaut.webp": "/porfolio/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
-    "static/media/formularioLogin.png": "/porfolio/static/media/formularioLogin.227edf3fffde775ab848.png",
-    "index.html": "/porfolio/index.html",
-    "main.0e88f260.css.map": "/porfolio/static/css/main.0e88f260.css.map",
-    "main.a9454e5f.js.map": "/porfolio/static/js/main.a9454e5f.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/porfolio/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.7e8a5f1f.css",
+    "main.js": "/static/js/main.8d253b0f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/EnDesarrollo2.png": "/static/media/EnDesarrollo2.254321f31a72e3f6f0d2.png",
+    "static/media/sendMessage.gif": "/static/media/sendMessage.54d85cc30f0fbf24a587.gif",
+    "static/media/errorMessage.gif": "/static/media/errorMessage.4787679e0512f0d92967.gif",
+    "static/media/portada.png": "/static/media/portada.bb08652f316113bc8fdd.png",
+    "static/media/secciónConsultar.png": "/static/media/secciónConsultar.51632bdec3b9ba4a6a2e.png",
+    "static/media/portadaGameMania.png": "/static/media/portadaGameMania.3a7de9f0fad6d67f580a.png",
+    "static/media/DashBoardEliminar.png": "/static/media/DashBoardEliminar.4b8bb71aa06e372b4c6e.png",
+    "static/media/Personas.png": "/static/media/Personas.5fd2a106c95a7c6e5a8f.png",
+    "static/media/DashBoardEditar.png": "/static/media/DashBoardEditar.1800f7f16d533131b989.png",
+    "static/media/DashBoard.png": "/static/media/DashBoard.464d2f2c70f13196f74a.png",
+    "static/media/secciónRegistrar.png": "/static/media/secciónRegistrar.f9fe494c52c993deffcc.png",
+    "static/media/profilephoto.jpg": "/static/media/profilephoto.0943c94927d996b64d66.jpg",
+    "static/media/Floating-Astronaut.webp": "/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
+    "static/media/formularioLogin.png": "/static/media/formularioLogin.227edf3fffde775ab848.png",
+    "index.html": "/index.html",
+    "main.7e8a5f1f.css.map": "/static/css/main.7e8a5f1f.css.map",
+    "main.8d253b0f.js.map": "/static/js/main.8d253b0f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e88f260.css",
-    "static/js/main.a9454e5f.js"
+    "static/css/main.7e8a5f1f.css",
+    "static/js/main.8d253b0f.js"
   ]
 }
