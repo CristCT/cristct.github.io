@@ -79,7 +79,7 @@ export default function PaginaNueva({project, closePopup}) {
                     <h1 className="popup__content__info__header__title">{project.name.toUpperCase()}</h1>
                   </div>
                   <div className="popup__content__info">
-                    <p className="popup__content__info__text">{project.description}</p>
+                    <p className="popup__content__info__text">{project.intro+project.description[0]}</p>
                     <div className="popup__content__info__img--center">
                       <img className="popup__content__info__img" src={project.images[1]} alt={project.title} />
                     </div>
@@ -92,7 +92,7 @@ export default function PaginaNueva({project, closePopup}) {
                   </div>
                   <div className="popup__content__info popup__content__info--last">
                     <p className="popup__content__info__text popup__content__info__text--last">{project.description[2]}</p>
-                    <div className="popup__content__info__img--center">
+                    <div className="popup__content__info__img--center popup__content__info__img--center--last">
                       <img className="popup__content__info__img popup__content__info__img--last" src={project.images[3]} alt={project.title} />
                       <img className="popup__content__info__img popup__content__info__img--last" src={project.images[4]} alt={project.title} />
                     </div>

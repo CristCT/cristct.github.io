@@ -68,7 +68,7 @@
 }
 
 .projects__card-description {
-    text-align: justify;
+    text-align: left;
     padding: 10px 16px; 
 }
 
@@ -109,6 +109,12 @@
     border-radius: 20px 20px 0 0;
 }
 
+@media screen and (max-width: 1442px) {
+    .projects__content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 1080px) {
     .projects {
         margin: 0;
@@ -126,7 +132,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .projects__content {
         grid-template-columns: 1fr;
         justify-content: center;

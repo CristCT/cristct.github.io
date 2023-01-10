@@ -86,7 +86,7 @@ export default function Projects() {
                                         <div>
                                             <div className='projects__card-title'><h6>{project.name}</h6></div>
                                             {/* the string is cut to keep only 120 char description */}
-                                            <p className='projects__card-description'>{project.description[0].substring(0, 120)}...
+                                            <p className='projects__card-description'>{project.intro.substring(0, 180)}...
                                                 <motion.span
                                                     whileHover={{ scale: 1.1 }}
                                                     whileTap={{ scale: 0.9 }}
