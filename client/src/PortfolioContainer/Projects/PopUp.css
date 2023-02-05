@@ -47,7 +47,7 @@
     right: 17px;
     color: #000;
     font-size: 1rem;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins';
     z-index: 2;
 }
 .popup__header__bar {
@@ -82,7 +82,7 @@
 }
 .popup__content__info__header__title {
     background-color: #1f0076;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins';
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@
 }
 .popup__content__info__text {
     grid-area: popup__content__info__text;
-    font-family: 'Poppins Regular';
+    font-family: 'Poppins';
     font-size: 1rem;
     text-align: left;
 }
@@ -185,12 +185,12 @@
         justify-content: center;
     }
     .popup__content__info__title {
-        font-family: 'Poppins SemiBold';
+        font-family: 'Poppins';
         font-size: 1.5rem;
         padding: 10px 20px;
     }
     .popup__content__info__text {
-        font-family: 'Poppins Regular';
+        font-family: 'Poppins';
         font-size: 1rem;
         text-align: start;
         margin: 0;
