@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.02c55168.css",
-    "main.js": "/static/js/main.e319c1eb.js",
+    "main.css": "/static/css/main.32429cef.css",
+    "main.js": "/static/js/main.fdcc52b4.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/EnDesarrollo2.png": "/static/media/EnDesarrollo2.254321f31a72e3f6f0d2.png",
+    "static/media/formasRegistro.png": "/static/media/formasRegistro.99efe18931cb54e0163f.png",
+    "static/media/infoGrupos.png": "/static/media/infoGrupos.d2c5a54dd6dfe2ed9cfc.png",
+    "static/media/creacionTareas.png": "/static/media/creacionTareas.59cd6ca71e1fe73cec1a.png",
     "static/media/sendMessage.gif": "/static/media/sendMessage.54d85cc30f0fbf24a587.gif",
+    "static/media/perfilIconos.png": "/static/media/perfilIconos.4e35dfd090775fa07968.png",
     "static/media/errorMessage.gif": "/static/media/errorMessage.4787679e0512f0d92967.gif",
     "static/media/portada.png": "/static/media/portada.bb08652f316113bc8fdd.png",
     "static/media/secciónConsultar.png": "/static/media/secciónConsultar.51632bdec3b9ba4a6a2e.png",
@@ -18,12 +22,12 @@
     "static/media/Floating-Astronaut.webp": "/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
     "static/media/formularioLogin.png": "/static/media/formularioLogin.227edf3fffde775ab848.png",
     "index.html": "/index.html",
-    "main.02c55168.css.map": "/static/css/main.02c55168.css.map",
-    "main.e319c1eb.js.map": "/static/js/main.e319c1eb.js.map",
+    "main.32429cef.css.map": "/static/css/main.32429cef.css.map",
+    "main.fdcc52b4.js.map": "/static/js/main.fdcc52b4.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02c55168.css",
-    "static/js/main.e319c1eb.js"
+    "static/css/main.32429cef.css",
+    "static/js/main.fdcc52b4.js"
   ]
 }
