@@ -1,4 +1,4 @@
-import { imagesProjectWayPoint, imagesProjectInHabitants, imagesProjectEnDesarrollo } from '../../assets/Projects/index.js'
+import { imagesProjectWayPoint, imagesProjectInHabitants, imagesProjectTaskCollab, imagesProjectEnDesarrollo } from '../../assets/Projects/index.js'
 
 export const ProjectsData = [
     {
@@ -23,6 +23,16 @@ export const ProjectsData = [
     },
     {
         card: "tres",
+        name: "App de Notas Grupales",
+        intro: "La App de Notas Grupales es una aplicación desarrollada para facilitar la colaboración y la comunicación en grupos. Esta app permite a los usuarios crear notas y tareas compartidas, así como asignarlas y programar recordatorios para su cumplimiento. También permite la gestión de usuarios y la configuración de permisos, permitiendo a los administradores controlar quién tiene acceso a qué información. ",
+        description: ["En la actualidad aveces se tiende a mandas mensajes como notas a otras personas para mantener una especie de lista de tareas, pero eso se puede hacer más practico con esta aplicación, ya que se puede crear grupos de personas y crear tareas facilmente.","Descripción 2.","Descripción 3."],
+        images: imagesProjectTaskCollab,
+        technology: ["FireBase", "Dart", "Flutter"],
+        icons: ["fas fa-database", "fas fa-code", "fas fa-mobile"],
+        url: "Aún No disponible"
+    },
+    {
+        card: "cuatro",
         name: "App de Registro de Pacientes",
         intro: "PsicoAPP es una aplicación móvil desarrollada con el objetivo de facilitar la gestión de pacientes por parte de los psicólogos. El desafío en el diseño de esta aplicación fue el de crear una base de datos que almacenara información en tiempo real sobre los psicólogos y sus respectivos pacientes, permitiendo así a los psicólogos registrar fácilmente a los pacientes a los que atienden. ",
         description: ["El desafió que involucró el diseño de esta aplicación fue el de generar una base de datos de psicologos y sus respectivos pacientes, para que los psicologos puedan registrar los pacientes que atienden.","Descripción 2."],
@@ -31,16 +41,7 @@ export const ProjectsData = [
         icons: ["fas fa-database", "fas fa-code", "fab fa-android"],
         url: "Aún No disponible"
     },
-    {
-        card: "cuatro",
-        name: "App de Notas Grupales",
-        intro: "La App de Notas Grupales es una aplicación desarrollada para facilitar la colaboración y la comunicación en grupos. Esta app permite a los usuarios crear notas y tareas compartidas, así como asignarlas y programar recordatorios para su cumplimiento. También permite la gestión de usuarios y la configuración de permisos, permitiendo a los administradores controlar quién tiene acceso a qué información. ",
-        description: ["En la actualidad aveces se tiende a mandas mensajes como notas a otras personas para mantener una especie de lista de tareas, pero eso se puede hacer más practico con esta aplicación, ya que se puede crear grupos de personas y crear tareas facilmente.","Descripción 2.","Descripción 3."],
-        images: imagesProjectEnDesarrollo,
-        technology: ["FireBase", "Dart", "Flutter"],
-        icons: ["fas fa-database", "fas fa-code", "fas fa-mobile"],
-        url: "Aún No disponible"
-    },
+    
     // {
     //     card: "cinco",
     //     name: "App de Monitor de Sensores",

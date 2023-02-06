@@ -105,6 +105,8 @@
     width: 100%;
 }
 
+i {padding-top: 10px;}
+
 .carousel.carousel-slider {
     border-radius: 20px 20px 0 0;
 }
@@ -157,5 +159,3 @@
         padding-right: 0px;
     }
 }
-    
-
