@@ -36,7 +36,7 @@ export default function Footer () {
                         variants={boxVariantsL}
                         >
                         <div className='footer__content__item__description'>
-                            <p>Gracias por visitar mi porfolio. 
+                            <p>Gracias por visitar mi portfolio. 
                             Si gustas, no dudes en seguirme en otras redes 
                             sociales para descubrir más proyectos y contenido 
                             interesante. ¡Te espero!</p>
