@@ -97,6 +97,45 @@ export default function PaginaNueva({project, closePopup}) {
                       <img className="popup__content__info__img popup__content__info__img--last" src={project.images[4]} alt={project.title} />
                     </div>
                   </div>
+                  <div className="popup__content__footer">
+                    <p className="popup__content__footer__title">{project.titleUrl}</p>
+                    <div className="popup__content__footer__links">
+                      {project.url instanceof Array && project.url[0] !== "No disponible" ? (
+                        project.url.map((link, index) => {
+                          return (
+                            <React.Fragment key={link}>
+                              <a
+                                key={link}
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <p>{project.descriptionUrl[index]}</p>
+                              </a>
+                            </React.Fragment>
+                          );
+                        })
+                      ) : project.url.includes("https") ? (
+                        <React.Fragment>
+                          <p>{project.titleUrl[0]}</p>
+                          <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {project.descriptionUrl[0]}
+                          </a>
+                        </React.Fragment>
+                      ) : (
+                        <div>
+                          <a href="https://www.linkedin.com/in/cristian-cuevas-tapia/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                          <a href="mailto:cristian.cuevastapia@gmail.com">
+                            Envíame un correo
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
               );
             })}

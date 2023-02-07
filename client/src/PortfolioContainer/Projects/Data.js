@@ -9,7 +9,9 @@ export const ProjectsData = [
         images: imagesProjectInHabitants,
         technology: ["Rest", "Java", "Angular"],
         icons: ["fas fa-server", "fas fa-code", "fab fa-angular"],
-        url: "Aún No disponible"
+        titleUrl: "Los repositorios de Inhabitants se encuentran en GitHub y cuentan con dos partes, una del Backend y otra del Frontend.",
+        descriptionUrl: ["Backend", "Frontend"],
+        url: ["https://github.com/CristCT/inhabitants_backend", "https://github.com/CristCT/inhabitants_frontend"]
     },
     {
         card: "dos",
@@ -19,7 +21,9 @@ export const ProjectsData = [
         images: imagesProjectTaskCollab,
         technology: ["FireBase", "Dart", "Flutter"],
         icons: ["fas fa-database", "fas fa-code", "fas fa-mobile"],
-        url: "Aún No disponible"
+        titleUrl: "El repositorio de TaskCollab por el momento es Privado, pero consulte para saber del proyecto.",
+        descriptionUrl: ["TaskCollab Link"],
+        url: ["No disponible"]
     },
     {
         card: "tres",
@@ -29,7 +33,9 @@ export const ProjectsData = [
         images: imagesProjectWayPoint,
         technology: ["MySQL", "PHP", "Modelo MVC"],
         icons: ["fas fa-database", "fas fa-code", "fas fa-wrench"],
-        url: "Aún No disponible"
+        titleUrl: "El repositorio de Gamemania se encuentran en GitHub.",
+        descriptionUrl: ["Gamemania Link"],
+        url: ["https://github.com/CristCT/GameMania"]
     },
     {
         card: "cuatro",
@@ -39,9 +45,10 @@ export const ProjectsData = [
         images: imagesProjectEnDesarrollo,
         technology: ["FireBase", "Java", "Android"],
         icons: ["fas fa-database", "fas fa-code", "fab fa-android"],
-        url: "Aún No disponible"
+        titleUrl: "El repositorios de PsicoAPP por el momento es Privado, pero consulte para saber del proyecto.",
+        descriptionUrl: ["PsicoAPP Link"],
+        url: ["No disponible"]
     },
-    
     // {
     //     card: "cinco",
     //     name: "App de Monitor de Sensores",
