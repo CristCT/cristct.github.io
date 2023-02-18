@@ -161,7 +161,7 @@ i {padding-top: 10px;}
 }
 
 
-@media screen and (max-width: 351) {
+@media screen and (max-width: 351px) {
     .projects__card-stats {
         position: relative;
     }
