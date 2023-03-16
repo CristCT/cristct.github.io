@@ -37,18 +37,18 @@ export const ProjectsData = [
         descriptionUrl: ["Gamemania Link"],
         url: ["https://github.com/CristCT/GameMania"]
     },
-    {
-        card: "cuatro",
-        name: "App de Registro de Pacientes",
-        intro: "PsicoAPP es una aplicación móvil desarrollada con el objetivo de facilitar la gestión de pacientes por parte de los psicólogos. El desafío en el diseño de esta aplicación fue el de crear una base de datos que almacenara información en tiempo real sobre los psicólogos y sus respectivos pacientes, permitiendo así a los psicólogos registrar fácilmente a los pacientes a los que atienden. ",
-        description: ["El desafió que involucró el diseño de esta aplicación fue el de generar una base de datos de psicologos y sus respectivos pacientes, para que los psicologos puedan registrar los pacientes que atienden.","Descripción 2."],
-        images: imagesProjectEnDesarrollo,
-        technology: ["FireBase", "Java", "Android"],
-        icons: ["fas fa-database", "fas fa-code", "fab fa-android"],
-        titleUrl: "El repositorios de PsicoAPP por el momento es Privado, pero consulte para saber del proyecto.",
-        descriptionUrl: ["PsicoAPP Link"],
-        url: ["No disponible"]
-    },
+    // {
+    //     card: "cuatro",
+    //     name: "App de Registro de Pacientes",
+    //     intro: "PsicoAPP es una aplicación móvil desarrollada con el objetivo de facilitar la gestión de pacientes por parte de los psicólogos. El desafío en el diseño de esta aplicación fue el de crear una base de datos que almacenara información en tiempo real sobre los psicólogos y sus respectivos pacientes, permitiendo así a los psicólogos registrar fácilmente a los pacientes a los que atienden. ",
+    //     description: ["El desafió que involucró el diseño de esta aplicación fue el de generar una base de datos de psicologos y sus respectivos pacientes, para que los psicologos puedan registrar los pacientes que atienden.","Descripción 2."],
+    //     images: imagesProjectEnDesarrollo,
+    //     technology: ["FireBase", "Java", "Android"],
+    //     icons: ["fas fa-database", "fas fa-code", "fab fa-android"],
+    //     titleUrl: "El repositorios de PsicoAPP por el momento es Privado, pero consulte para saber del proyecto.",
+    //     descriptionUrl: ["PsicoAPP Link"],
+    //     url: ["No disponible"]
+    // },
     // {
     //     card: "cinco",
     //     name: "App de Monitor de Sensores",
