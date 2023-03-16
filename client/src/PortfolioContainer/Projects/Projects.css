@@ -24,7 +24,7 @@
     margin-bottom: 8.75rem;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     justify-content: center;
     border-radius: 20px;
