@@ -79,7 +79,7 @@ export default function Profile() {
               <h1 className='h1-min'>
                 <Typewriter
                   options={{
-                    strings: ["Web Developer", "Java Developer", "Python Developer"],
+                    strings: ["Web Developer", "Java Developer", "Flutter Developer"],
                     autoStart: true,
                     loop: true,
                     delay: 50,
