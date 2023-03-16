@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6b2740a.css",
-    "main.js": "/static/js/main.be52b217.js",
+    "main.css": "/static/css/main.3716bbc2.css",
+    "main.js": "/static/js/main.88bbc33a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/profilephoto.jpg": "/static/media/profilephoto.d7ca35bebf151003ec17.jpg",
     "static/media/EnDesarrollo2.png": "/static/media/EnDesarrollo2.254321f31a72e3f6f0d2.png",
     "static/media/formasRegistro.png": "/static/media/formasRegistro.99efe18931cb54e0163f.png",
     "static/media/infoGrupos.png": "/static/media/infoGrupos.d2c5a54dd6dfe2ed9cfc.png",
@@ -18,16 +19,15 @@
     "static/media/DashBoardEditar.png": "/static/media/DashBoardEditar.1800f7f16d533131b989.png",
     "static/media/DashBoard.png": "/static/media/DashBoard.464d2f2c70f13196f74a.png",
     "static/media/secciónRegistrar.png": "/static/media/secciónRegistrar.f9fe494c52c993deffcc.png",
-    "static/media/profilephoto.jpg": "/static/media/profilephoto.0943c94927d996b64d66.jpg",
     "static/media/Floating-Astronaut.webp": "/static/media/Floating-Astronaut.2b0bab9cce1520fd1ecf.webp",
     "static/media/formularioLogin.png": "/static/media/formularioLogin.227edf3fffde775ab848.png",
     "index.html": "/index.html",
-    "main.f6b2740a.css.map": "/static/css/main.f6b2740a.css.map",
-    "main.be52b217.js.map": "/static/js/main.be52b217.js.map",
+    "main.3716bbc2.css.map": "/static/css/main.3716bbc2.css.map",
+    "main.88bbc33a.js.map": "/static/js/main.88bbc33a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6b2740a.css",
-    "static/js/main.be52b217.js"
+    "static/css/main.3716bbc2.css",
+    "static/js/main.88bbc33a.js"
   ]
 }
