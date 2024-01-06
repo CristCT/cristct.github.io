@@ -1,5 +1,5 @@
-# Portafolio
-Bienvenido a mi portafolio en línea. En este repositorio encontrarás una selección de algunos de mis proyectos.
+# Portfolio
+Bienvenido a mi portfolio en línea. En este repositorio encontrarás una selección de algunos de mis proyectos.
 Si quieres visitar la pagina puedes hacer click en los enlaces o <a href="https://cristct.github.io/" target="_blank">Aquí</a>
 
 ## Acerca de mí

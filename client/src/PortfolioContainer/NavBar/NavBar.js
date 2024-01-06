@@ -24,7 +24,7 @@ const NavBar = (props) => {
     <nav className='navbar' id='Inicio'>
       <div className='navbar__left'>
         <div className='navbar__title'>
-          <h1 className='navbar__logo'>Porfolio</h1>
+          <h1 className='navbar__logo'>Portfolio</h1>
         </div>
         <div className='navbar__toggle'>
           <Toggle theme={props.theme} setTheme={props.setTheme} />
