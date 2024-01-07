@@ -1,31 +1,33 @@
-name: Build and Deploy to GitHub Pages
-
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16' # Asegúrate de usar la versión de Node.js que necesitas
+        node-version: '16.x'
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: npm install
+      working-directory: ./client
 
     - name: Build
-      run: npm run build
+      run: CI=false npm run build
+      working-directory: ./client
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages # La rama a la que se desplegará
-        folder: build # La carpeta que se desplegará
+        branch: gh-pages
+        folder: client/build
+        token: ${{ secrets.GITHUB_TOKEN }}
