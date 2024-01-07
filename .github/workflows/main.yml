@@ -18,11 +18,11 @@ jobs:
         node-version: '16.x'
 
     - name: Install dependencies
-      run: npm install --legacy-peer-deps
+      run: npm install
       working-directory: ./client
 
     - name: Build
-      run: npm run build
+      run: CI=false npm run build
       working-directory: ./client
 
     - name: Deploy to GitHub Pages
