@@ -19,8 +19,11 @@ jobs:
       with:
         node-version: "16.x"
 
+    - name: Change to client directory
+      run: cd client
+
     - name: Install dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
 
     - name: Build
       run: npm run build
@@ -29,6 +32,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
-        folder: build
+        folder: client/build
         token: ${{ secrets.GITHUB_TOKEN }}
+
 
